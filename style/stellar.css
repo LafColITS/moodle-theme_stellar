@@ -17536,6 +17536,16 @@ li.section .content,
 .breadcrumb {
   background-color: #FFFFFF;
 }
+.breadcrumb-nav {
+  margin-bottom: 0;
+}
+.breadcrumb-botton {
+  margin: 0;
+}
+form#coursesearchnavbar {
+  float: left;
+  padding-left: 15px;
+}
 .course_category_tree .category > .info {
   background-color: inherit;
   border: none;
@@ -17558,6 +17568,7 @@ header#page-header {
 }
 div#page-navbar {
   background-color: #822433;
+  padding: 4px 0 4px 0;
 }
 nav.breadcrumb-nav ol.breadcrumb {
   background-color: #822433;
@@ -17592,4 +17603,7 @@ a {
 }
 .mform fieldset.collapsible legend a.fheader {
   margin-left: 0;
+}
+.input-group {
+  display: inherit;
 }
