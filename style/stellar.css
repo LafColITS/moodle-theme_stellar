@@ -17311,6 +17311,14 @@ img.sitelogo {
   border-right-width: 0;
   border-radius: 0;
 }
+.skipregions {
+  background-color: #FFFFFF;
+  padding-top: 15px;
+}
+.skipregions > a.btn-default {
+  background-color: #822433;
+  color: #FFFFFF;
+}
 a.moodlezoom {
   margin-right: 10px;
 }
@@ -17606,4 +17614,7 @@ a {
 }
 .input-group {
   display: inherit;
+}
+a.btn {
+  text-decoration: none;
 }

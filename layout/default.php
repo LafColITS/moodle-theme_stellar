@@ -96,9 +96,15 @@ echo $OUTPUT->doctype() ?>
     </header>
 
     <div id="page-content" class="row">
-        <div class="singlebutton visible-xs col-sm-2">
-            <a href="#blockregion" class="btn btn-default btn-block">Skip to blocks</a>
+    <?php
+    if ($knownregionpre || $knownregionpost) {
+    ?>
+        <div class="singlebutton visible-xs col-sm-2 skipregions">
+            <a href="#blockregion" class="btn btn-default">Skip to blocks</a>
         </div>
+    <?php
+    }
+    ?>
         <div id="region-main" class="<?php echo $regions['content']; ?>">
             <?php
             echo $OUTPUT->course_content_header();
