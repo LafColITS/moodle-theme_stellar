@@ -72,7 +72,7 @@ echo $OUTPUT->doctype() ?>
 </nav>
 <header class="moodleheader">
     <div class="container-fluid">
-    <?php echo $OUTPUT->page_heading(); ?>
+    <?php // echo $OUTPUT->page_heading(); ?>
     </div>
 </header>
 

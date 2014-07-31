@@ -893,7 +893,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 input,
 button,
@@ -904,12 +904,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #822433;
+  color: #006699;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #46131b;
+  color: #00334d;
   text-decoration: underline;
 }
 a:focus {
@@ -939,7 +939,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2100,7 +2100,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -3035,7 +3035,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #822433;
+  color: #006699;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -3056,7 +3056,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #46131b;
+  color: #00334d;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3628,7 +3628,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #822433;
+  border-color: #006699;
 }
 .nav .nav-divider {
   height: 1px;
@@ -3665,7 +3665,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus,
 .box.message .messagearea .messagehistory .messagehistorytype span.visible {
   color: #555555;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3736,7 +3736,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f1f2f2;
+    border-bottom-color: #e7e8e8;
   }
 }
 .nav-tabs.nav-justified > li > a {
@@ -3762,7 +3762,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f1f2f2;
+    border-bottom-color: #e7e8e8;
   }
 }
 .nav-pills > li {
@@ -3830,7 +3830,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f1f2f2;
+    border-bottom-color: #e7e8e8;
   }
 }
 .tab-content > .tab-pane {
@@ -4397,7 +4397,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #822433;
+  color: #006699;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4417,7 +4417,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #46131b;
+  color: #00334d;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4623,7 +4623,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #822433;
+  color: #006699;
   background-color: #ffffff;
 }
 .nav-pills > li > a > .badge {
@@ -4672,7 +4672,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -4687,7 +4687,7 @@ a.list-group-item.active > .badge,
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #822433;
+  border-color: #006699;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -7757,7 +7757,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   left: 20.3em;
   margin: 0;
   padding: 1.6em;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   overflow-x: hidden;
   overflow-y: auto;
   line-height: 2em;
@@ -7768,7 +7768,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   display: block;
 }
 .choosercontainer #chooseform .selected {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   box-shadow: 0px 0 10px 0 #ccc;
 }
 .section-modchooser-link img.smallicon {
@@ -10142,7 +10142,7 @@ span.editinstructions {
 }
 .course-being-dragged-proxy {
   border: 0;
-  color: #822433;
+  color: #006699;
   vertical-align: middle;
   padding: 0 0 0 4em;
 }
@@ -11981,7 +11981,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   border: 0;
 }
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures td {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures td#user1,
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures td#user2 {
@@ -12021,7 +12021,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
 .box.message .messagearea .messagehistory .messagehistorytype > li.active > a:hover,
 .box.message .messagearea .messagehistory .messagehistorytype > li.active > a:focus {
   color: #555555;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -12092,7 +12092,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:hover,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:focus {
-    border-bottom-color: #f1f2f2;
+    border-bottom-color: #e7e8e8;
   }
 }
 .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > li > a {
@@ -12118,7 +12118,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:hover,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:focus {
-    border-bottom-color: #f1f2f2;
+    border-bottom-color: #e7e8e8;
   }
 }
 .box.message .messagearea .messagehistory .messagehistorytype .hiddenelement {
@@ -12128,7 +12128,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   color: #333333;
 }
 .box.message .messagearea .messagehistory .messagehistorytype a.visible {
-  color: #822433;
+  color: #006699;
 }
 .box.message .messagearea .messagesend .mform {
   margin: 0 20px;
@@ -12760,10 +12760,10 @@ a.que .correctness:focus {
 }
 #page-mod-quiz-edit .questionbankwindow div.header a:link,
 #page-mod-quiz-edit .questionbankwindow div.header a:visited {
-  color: #822433;
+  color: #006699;
 }
 #page-mod-quiz-edit .questionbankwindow div.header a:hover {
-  color: #46131b;
+  color: #00334d;
 }
 #page-mod-quiz-edit .questionbankwindow div.header .title {
   color: #333333;
@@ -12773,7 +12773,7 @@ a.que .correctness:focus {
   padding: 1.5em;
 }
 #page-mod-quiz-edit .categoryinfo {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border-bottom: none;
 }
 #page-mod-quiz-edit div.questionbank .categoryquestionscontainer,
@@ -12793,13 +12793,13 @@ a.que .correctness:focus {
   margin: 0 -1.2em -1em -1.2em;
 }
 #page-mod-quiz-edit div.question div.content div.questioncontrols {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 #page-mod-quiz-edit div.question div.content div.points {
   margin-top: -0.5em;
   padding-bottom: 0.5em;
   border: none;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 #page-mod-quiz-edit div.question div.content div.points label {
   display: inline-block;
@@ -12808,7 +12808,7 @@ a.que .correctness:focus {
   display: inherit;
 }
 #page-mod-quiz-edit div.quizpage .pagecontent .pagestatus {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 #page-mod-quiz-edit .quizpagedelete,
 #page-mod-quiz-edit .quizpagedelete img {
@@ -12848,7 +12848,7 @@ a.que .correctness:focus {
   width: auto;
 }
 #page-mod-quiz-edit div.editq div.question div.content {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border: 1px solid #ddd;
   border-radius: 2px;
   overflow: hidden;
@@ -12858,7 +12858,7 @@ a.que .correctness:focus {
   font-size: 0.9em;
 }
 a#hidebankcmd {
-  color: #822433;
+  color: #006699;
 }
 .que.shortanswer .answer {
   padding: 0;
@@ -13665,7 +13665,7 @@ table.collection > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 table.collection .table {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 table.collection > thead > tr > th,
 table.collection > tbody > tr > th,
@@ -15291,7 +15291,7 @@ div#dock {
 #page-backup-restore .filealiasesfailures .aliaseslist {
   width: 90%;
   margin: 0.8em auto;
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
   border: 1px dotted #dddddd;
 }
 .path-backup .fitem .smallicon {
@@ -15440,7 +15440,7 @@ table.flexible > tbody + tbody,
 .path-rating .ratingtable .table,
 table.flexible .table,
 .generaltable .table {
-  background-color: #f1f2f2;
+  background-color: #e7e8e8;
 }
 .path-rating .ratingtable > tbody > tr:nth-child(odd) > td,
 table#explaincaps > tbody > tr:nth-child(odd) > td,
@@ -16142,7 +16142,7 @@ input.fp-btn-choose {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f1f2f2;
+    border-bottom-color: #e7e8e8;
   }
 }
 .userenrolment {
@@ -16302,7 +16302,7 @@ input.fp-btn-choose {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #822433;
+  color: #006699;
   background: inherit;
   font-size: 20px;
   margin-bottom: 10px;
@@ -17311,6 +17311,9 @@ img.sitelogo {
   border-right-width: 0;
   border-radius: 0;
 }
+a.moodlezoom {
+  margin-right: 10px;
+}
 a.moodlezoom .zoomin {
   display: inline-block;
   margin-bottom: 0;
@@ -17503,7 +17506,6 @@ body.zoomin .moodlezoom span.zoomout .badge {
   margin-bottom: 6px;
 }
 .course-content ul.topics li.section,
-nav.breadcrumb-nav,
 .mform,
 .forumheaderlist,
 .nav-tabs.nav-justified,
@@ -17518,7 +17520,6 @@ nav.breadcrumb-nav,
 /*
 li.section .content,
 .forumpost,
-nav.breadcrumb-nav ol,
 .fcontainer,
 .nav-tabs.nav-justified li:first-child,
 .content > .subcategories .category
@@ -17542,4 +17543,35 @@ nav.breadcrumb-nav ol,
 }
 .course_category_tree .panel-default > .panel-heading {
   background-color: inherit;
+}
+div#region-main {
+  background-color: #FFFFFF;
+}
+aside.block-region {
+  background-color: #f1f2f2;
+  padding-top: 15px;
+}
+header#page-header {
+  background-color: #f1f2f2;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+div#page-navbar {
+  background-color: #822433;
+}
+nav.breadcrumb-nav ol.breadcrumb {
+  background-color: #822433;
+  color: #FFFFFF;
+}
+nav.breadcrumb-nav ol.breadcrumb a:link,
+nav.breadcrumb-nav ol.breadcrumb a:visited {
+  color: #FFFFFF;
+}
+#moodle-navbar {
+  border-color: #822433;
+}
+.course-content {
+  background-color: #FFFFFF;
 }
