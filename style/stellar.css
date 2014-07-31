@@ -17546,6 +17546,7 @@ li.section .content,
 }
 div#region-main {
   background-color: #FFFFFF;
+  padding-bottom: 1px;
 }
 aside.block-region {
   background-color: #f1f2f2;
@@ -17553,8 +17554,6 @@ aside.block-region {
 }
 header#page-header {
   background-color: #f1f2f2;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -17574,4 +17573,15 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
 }
 .course-content {
   background-color: #FFFFFF;
+}
+.loginpanel .guestsub form {
+  text-align: center;
+}
+.loginbox.onecolumn {
+  border-radius: 0;
+  margin-top: 20px;
+  padding: 0 15px 0 15px;
+}
+a {
+  text-decoration: underline;
 }
