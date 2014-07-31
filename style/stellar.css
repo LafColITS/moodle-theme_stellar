@@ -893,7 +893,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 input,
 button,
@@ -939,7 +939,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2100,7 +2100,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -3665,7 +3665,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus,
 .box.message .messagearea .messagehistory .messagehistorytype span.visible {
   color: #555555;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3736,7 +3736,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #e7e8e8;
+    border-bottom-color: #f1f2f2;
   }
 }
 .nav-tabs.nav-justified > li > a {
@@ -3762,7 +3762,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #e7e8e8;
+    border-bottom-color: #f1f2f2;
   }
 }
 .nav-pills > li {
@@ -3830,7 +3830,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #e7e8e8;
+    border-bottom-color: #f1f2f2;
   }
 }
 .tab-content > .tab-pane {
@@ -4672,7 +4672,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -7757,7 +7757,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   left: 20.3em;
   margin: 0;
   padding: 1.6em;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   overflow-x: hidden;
   overflow-y: auto;
   line-height: 2em;
@@ -7768,7 +7768,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   display: block;
 }
 .choosercontainer #chooseform .selected {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   box-shadow: 0px 0 10px 0 #ccc;
 }
 .section-modchooser-link img.smallicon {
@@ -11981,7 +11981,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   border: 0;
 }
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures td {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures td#user1,
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures td#user2 {
@@ -12021,7 +12021,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
 .box.message .messagearea .messagehistory .messagehistorytype > li.active > a:hover,
 .box.message .messagearea .messagehistory .messagehistorytype > li.active > a:focus {
   color: #555555;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -12092,7 +12092,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:hover,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:focus {
-    border-bottom-color: #e7e8e8;
+    border-bottom-color: #f1f2f2;
   }
 }
 .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > li > a {
@@ -12118,7 +12118,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:hover,
   .box.message .messagearea .messagehistory .messagehistorytype.nav-justified > .active > a:focus {
-    border-bottom-color: #e7e8e8;
+    border-bottom-color: #f1f2f2;
   }
 }
 .box.message .messagearea .messagehistory .messagehistorytype .hiddenelement {
@@ -12773,7 +12773,7 @@ a.que .correctness:focus {
   padding: 1.5em;
 }
 #page-mod-quiz-edit .categoryinfo {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border-bottom: none;
 }
 #page-mod-quiz-edit div.questionbank .categoryquestionscontainer,
@@ -12793,13 +12793,13 @@ a.que .correctness:focus {
   margin: 0 -1.2em -1em -1.2em;
 }
 #page-mod-quiz-edit div.question div.content div.questioncontrols {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 #page-mod-quiz-edit div.question div.content div.points {
   margin-top: -0.5em;
   padding-bottom: 0.5em;
   border: none;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 #page-mod-quiz-edit div.question div.content div.points label {
   display: inline-block;
@@ -12808,7 +12808,7 @@ a.que .correctness:focus {
   display: inherit;
 }
 #page-mod-quiz-edit div.quizpage .pagecontent .pagestatus {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 #page-mod-quiz-edit .quizpagedelete,
 #page-mod-quiz-edit .quizpagedelete img {
@@ -12848,7 +12848,7 @@ a.que .correctness:focus {
   width: auto;
 }
 #page-mod-quiz-edit div.editq div.question div.content {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border: 1px solid #ddd;
   border-radius: 2px;
   overflow: hidden;
@@ -13665,7 +13665,7 @@ table.collection > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 table.collection .table {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 table.collection > thead > tr > th,
 table.collection > tbody > tr > th,
@@ -15291,7 +15291,7 @@ div#dock {
 #page-backup-restore .filealiasesfailures .aliaseslist {
   width: 90%;
   margin: 0.8em auto;
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
   border: 1px dotted #dddddd;
 }
 .path-backup .fitem .smallicon {
@@ -15440,7 +15440,7 @@ table.flexible > tbody + tbody,
 .path-rating .ratingtable .table,
 table.flexible .table,
 .generaltable .table {
-  background-color: #e7e8e8;
+  background-color: #f1f2f2;
 }
 .path-rating .ratingtable > tbody > tr:nth-child(odd) > td,
 table#explaincaps > tbody > tr:nth-child(odd) > td,
@@ -16142,7 +16142,7 @@ input.fp-btn-choose {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #e7e8e8;
+    border-bottom-color: #f1f2f2;
   }
 }
 .userenrolment {
@@ -17506,7 +17506,6 @@ body.zoomin .moodlezoom span.zoomout .badge {
   margin-bottom: 6px;
 }
 .course-content ul.topics li.section,
-.mform,
 .forumheaderlist,
 .nav-tabs.nav-justified,
 .content > .subcategories {
@@ -17584,4 +17583,13 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
 }
 a {
   text-decoration: underline;
+}
+#dockeditempanel .dockeditempanel_content {
+  border-color: #822433;
+}
+#dockeditempanel .dockeditempanel_hd {
+  border-radius: 0;
+}
+.mform fieldset.collapsible legend a.fheader {
+  margin-left: 0;
 }
