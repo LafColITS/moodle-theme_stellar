@@ -17562,7 +17562,6 @@ form#coursesearchnavbar {
   background-color: inherit;
 }
 div#region-main {
-  background-color: #FFFFFF;
   padding-bottom: 1px;
 }
 aside.block-region {
@@ -17588,9 +17587,6 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
 }
 #moodle-navbar {
   border-color: #822433;
-}
-.course-content {
-  background-color: #FFFFFF;
 }
 .loginpanel .guestsub form {
   text-align: center;
