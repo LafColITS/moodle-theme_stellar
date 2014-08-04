@@ -17614,3 +17614,6 @@ a {
 a.btn {
   text-decoration: none;
 }
+#page-grade-report-grader-index #user-grades {
+  margin-top: 4px;
+}
