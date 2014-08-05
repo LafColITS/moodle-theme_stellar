@@ -17590,6 +17590,12 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
 #moodle-navbar {
   border-color: #822433;
 }
+@media (max-width: 768px) {
+  h3.sectionname {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 .loginpanel .guestsub form {
   text-align: center;
 }
