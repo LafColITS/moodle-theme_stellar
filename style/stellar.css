@@ -17547,8 +17547,10 @@ li.section .content,
 .breadcrumb-nav {
   margin-bottom: 0;
 }
-.breadcrumb-botton {
-  margin: 0;
+@media (max-width: 768px) {
+  .breadcrumb-button {
+    float: left;
+  }
 }
 form#coursesearchnavbar {
   float: left;
