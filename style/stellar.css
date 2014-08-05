@@ -17532,14 +17532,6 @@ li.section .content,
 {
     .stellar-card-left;
 }*/
-/* These styles need to be overridden because
-   we changed the region stacking order. */
-.dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
-  left: inherit;
-}
-.dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
-  right: inherit;
-}
 .breadcrumb {
   background-color: #FFFFFF;
 }
