@@ -17562,6 +17562,7 @@ form#coursesearchnavbar {
   background-color: inherit;
 }
 div#region-main {
+  padding-top: 14px;
   padding-bottom: 1px;
 }
 aside.block-region {
