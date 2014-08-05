@@ -17289,6 +17289,9 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric .addcriterion {
 .forumpost .row .left {
   width: 43px;
 }
+.forumsearch {
+  float: left;
+}
 .navbar[role="navigation"] {
   margin-bottom: 0;
 }
