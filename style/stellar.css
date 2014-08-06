@@ -17529,6 +17529,7 @@ body.zoomin .moodlezoom span.zoomout .badge {
   margin-bottom: 6px;
 }
 .course-content ul.topics li.section,
+.course-content ul.weeks li.section,
 .forumheaderlist,
 .content > .subcategories {
   background-color: #FFFFFF;
