@@ -17619,6 +17619,9 @@ a.assignrolelink {
 #dockeditempanel .dockeditempanel_hd {
   border-radius: 0;
 }
+#dock {
+  z-index: 3;
+}
 .mform fieldset.collapsible legend a.fheader {
   margin-left: 0;
 }
