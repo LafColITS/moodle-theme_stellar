@@ -12121,6 +12121,16 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
     border-bottom-color: #f1f2f2;
   }
 }
+.box.message .messagearea .messagehistory .messagehistorytype > li > a {
+  background-color: #FFFFFF;
+}
+.box.message .messagearea .messagehistory .messagehistorytype > li.active > a,
+.box.message .messagearea .messagehistory .messagehistorytype > li.active > a:hover {
+  background-color: #822433;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
 .box.message .messagearea .messagehistory .messagehistorytype .hiddenelement {
   display: none;
 }
@@ -17520,7 +17530,6 @@ body.zoomin .moodlezoom span.zoomout .badge {
 }
 .course-content ul.topics li.section,
 .forumheaderlist,
-.nav-tabs.nav-justified,
 .content > .subcategories {
   background-color: #FFFFFF;
   border-color: #eeeeee;
@@ -17533,7 +17542,6 @@ body.zoomin .moodlezoom span.zoomout .badge {
 li.section .content,
 .forumpost,
 .fcontainer,
-.nav-tabs.nav-justified li:first-child,
 .content > .subcategories .category
 {
     .stellar-card-left;
@@ -17630,6 +17638,19 @@ a.btn {
 }
 #page-grade-report-grader-index #user-grades {
   margin-top: 20px;
+}
+.nav-tabs > li > a,
+.box.message .messagearea .messagehistory .messagehistorytype span.visible,
+.box.message .messagearea .messagehistory .messagehistorytype a.visible {
+  background-color: #FFFFFF;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.box.message .messagearea .messagehistory .messagehistorytype span.visible {
+  background-color: #822433;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
 }
 .subfield.subfield_email,
 th.userfield.useremail[scope="row"] {
