@@ -17594,6 +17594,11 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
     margin-right: 40px;
   }
 }
+a.editing_highlight img.icon,
+a.editing_showhide img.icon {
+  height: 20px;
+  width: 20px;
+}
 .loginpanel .guestsub form {
   text-align: center;
 }
