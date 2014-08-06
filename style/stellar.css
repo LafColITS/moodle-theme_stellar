@@ -17656,3 +17656,7 @@ a.btn {
 th.userfield.useremail[scope="row"] {
   text-transform: lowercase;
 }
+.block .minicalendar th,
+.block .minicalendar td {
+  padding: 0;
+}
