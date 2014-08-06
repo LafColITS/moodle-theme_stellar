@@ -17610,6 +17610,9 @@ a.editing_showhide img.icon {
 a {
   text-decoration: underline;
 }
+a.assignrolelink {
+  text-decoration: none;
+}
 #dockeditempanel .dockeditempanel_content {
   border-color: #822433;
 }
