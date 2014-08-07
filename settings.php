@@ -24,10 +24,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$temp = new admin_settingpage('theme_stellar', get_string('configtitle', 'theme_stellar'));
+if ($ADMIN->fulltree) {
 
-// Logo.
-$temp->add(
+    // Logo.
+    $settings->add(
         new admin_setting_configtext(
                 'theme_stellar/logo',
                 get_string('logo', 'theme_stellar'),
@@ -35,6 +35,5 @@ $temp->add(
                 '',
                 PARAM_URL
         )
-);
-
-$ADMIN->add('themes', $temp);
+    );
+}
