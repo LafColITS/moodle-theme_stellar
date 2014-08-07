@@ -21,7 +21,7 @@
  * @copyright   Lafayette College ITS
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
- 
+
 defined('MOODLE_INTERNAL') || die();
 
 // Forked from parent theme to re-order regions.
@@ -43,7 +43,7 @@ function theme_stellar_bootstrap_grid($hassidepre, $hassidepost) {
         $regions['pre'] = 'empty';
         $regions['post'] = 'empty';
     }
-    
+
     if ('rtl' === get_string('thisdirection', 'langconfig')) {
         if ($hassidepre && $hassidepost) {
             $regions['pre'] = 'col-sm-3  col-sm-pull-3 col-lg-2 col-lg-pull-8';

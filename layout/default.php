@@ -51,14 +51,15 @@ echo $OUTPUT->doctype() ?>
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="<?php echo $CFG->wwwroot;?>"><?php
-        if (!empty($PAGE->theme->settings->logo)) {
-            ?>
+if (!empty($PAGE->theme->settings->logo)) {
+    ?>
             <img class="sitelogo" src="<?php echo $PAGE->theme->settings->logo;?>" alt="Custom logo here" />
-            <?php
-        } else {
-            echo $SITE->shortname;
-        }
-        ?></a>
+    <?php
+} else {
+    echo $SITE->shortname;
+}
+?>
+        </a>
     </div>
 
     <div id="moodle-navbar" class="navbar-collapse collapse">
@@ -81,12 +82,12 @@ echo $OUTPUT->doctype() ?>
         <div id="page-navbar" class="clearfix">
             <nav class="breadcrumb-nav" role="navigation" aria-label="breadcrumb"><?php echo $OUTPUT->navbar(); ?></nav>
             <div class="breadcrumb-button">
-            <?php
-                echo $OUTPUT->page_heading_button();
-                if ($knownregionpre || $knownregionpost) {
-                    echo $OUTPUT->content_zoom();
-                }
-             ?>
+<?php
+echo $OUTPUT->page_heading_button();
+if ($knownregionpre || $knownregionpost) {
+    echo $OUTPUT->content_zoom();
+}
+?>
             </div>
         </div>
 
@@ -96,15 +97,15 @@ echo $OUTPUT->doctype() ?>
     </header>
 
     <div id="page-content" class="row">
-    <?php
-    if ($knownregionpre || $knownregionpost) {
-    ?>
+<?php
+if ($knownregionpre || $knownregionpost) {
+?>
         <div class="singlebutton visible-xs col-sm-2 skipregions">
             <a href="#blockregion" class="btn btn-default">Skip to blocks</a>
         </div>
-    <?php
-    }
-    ?>
+<?php
+}
+?>
         <div id="region-main" class="<?php echo $regions['content']; ?>">
             <?php
             echo $OUTPUT->course_content_header();
@@ -114,14 +115,14 @@ echo $OUTPUT->doctype() ?>
         </div>
 
         <a name="blockregion"></a>
-        <?php
-        if ($knownregionpre) {
-            echo $OUTPUT->blocks('side-pre', $regions['pre']);
-        }?>
-        <?php
-        if ($knownregionpost) {
+<?php
+if ($knownregionpre) {
+    echo $OUTPUT->blocks('side-pre', $regions['pre']);
+}
+if ($knownregionpost) {
             echo $OUTPUT->blocks('side-post', $regions['post']);
-        }?>
+}
+?>
     </div>
 
     <footer id="page-footer">
