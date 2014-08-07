@@ -27,7 +27,7 @@ $plugin->requires  = 2013111804;
 $plugin->cron      = 0;
 $plugin->component = 'theme_stellar';
 $plugin->maturity  = MATURITY_ALPHA;
-$plugin->release   = 'v0.1.0';
+$plugin->release   = 'v0.1.1';
 
 $plugin->dependencies = array(
     'theme_bootstrap' => 2014051301

@@ -1,6 +1,6 @@
 {
   "name": "theme-stellar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Moodle Stellar theme",
   "author": "Lafayette College",
   "main": "gulpfile.js",
