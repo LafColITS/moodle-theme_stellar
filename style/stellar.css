@@ -17302,6 +17302,12 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric .addcriterion {
 .forumsearch {
   float: left;
 }
+.path-mod-forum .forumheaderlist .picture {
+  padding-right: 5px;
+}
+.path-mod-forum .forumheaderlist .discussion .replies {
+  text-align: left;
+}
 .navbar[role="navigation"] {
   margin-bottom: 0;
 }
