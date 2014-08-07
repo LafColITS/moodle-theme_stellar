@@ -17329,7 +17329,10 @@ img.sitelogo {
   border-width: 0 0 1px 0;
 }
 #moodle-navbar {
-  margin-right: -30px;
+  margin-right: -15px;
+}
+.nav > li:last-child > a {
+  padding-right: 0;
 }
 .block_rss_client .list li:first-child {
   border-top-width: 0;
