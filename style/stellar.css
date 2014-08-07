@@ -17322,6 +17322,9 @@ img.sitelogo {
   border-color: #FFFFFF;
   border-width: 0 0 1px 0;
 }
+#moodle-navbar {
+  margin-right: -30px;
+}
 .block_rss_client .list li:first-child {
   border-top-width: 0;
 }
@@ -17337,9 +17340,6 @@ img.sitelogo {
 .skipregions > a.btn-default {
   background-color: #822433;
   color: #FFFFFF;
-}
-a.moodlezoom {
-  margin-right: 10px;
 }
 a.moodlezoom .zoomin {
   display: inline-block;
@@ -17539,6 +17539,9 @@ body.zoomin .moodlezoom span.zoomout .badge {
 }
 .breadcrumb {
   background-color: #FFFFFF;
+}
+.breadcrumb-button {
+  margin-right: 15px;
 }
 .breadcrumb-nav {
   margin-bottom: 0;
