@@ -17319,7 +17319,8 @@ img.sitelogo {
   padding-top: 0;
 }
 .navbar-inverse {
-  border-color: #aa2f43;
+  border-color: #FFFFFF;
+  border-width: 0 0 1px 0;
 }
 .block_rss_client .list li:first-child {
   border-top-width: 0;
