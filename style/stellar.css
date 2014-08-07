@@ -17661,3 +17661,42 @@ th.userfield.useremail[scope="row"] {
 .block .minicalendar td {
   padding: 0;
 }
+.userprofile .userprofilebox .profilepicture {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .userprofile .userprofilebox .profilepicture {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .userprofile .userprofilebox .profilepicture {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.userprofile .userprofilebox .descriptionbox {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .userprofile .userprofilebox .descriptionbox {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .userprofile .userprofilebox .descriptionbox {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+.userprofile .userprofilebox .descriptionbox dl.list {
+  margin-left: 10px;
+}
