@@ -17514,12 +17514,6 @@ body.zoomin .moodlezoom span.zoomout .badge {
 .breadcrumb-button > .singlebutton {
   float: left !important;
 }
-.stellar-card-left {
-  border-left-color: #822433;
-  border-left-style: double;
-  border-left-width: 3px;
-  border-radius: 0;
-}
 .stellar-card {
   background-color: #FFFFFF;
   border-color: #eeeeee;
@@ -17539,14 +17533,6 @@ body.zoomin .moodlezoom span.zoomout .badge {
   padding: 4px;
   margin-bottom: 6px;
 }
-/*
-li.section .content,
-.forumpost,
-.fcontainer,
-.content > .subcategories .category
-{
-    .stellar-card-left;
-}*/
 .breadcrumb {
   background-color: #FFFFFF;
 }
