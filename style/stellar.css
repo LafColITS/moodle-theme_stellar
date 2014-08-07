@@ -17700,3 +17700,6 @@ th.userfield.useremail[scope="row"] {
 .userprofile .userprofilebox .descriptionbox dl.list {
   margin-left: 10px;
 }
+.userprofile .messagebox {
+  margin-left: 10px;
+}
