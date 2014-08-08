@@ -56,7 +56,7 @@ if (!empty($PAGE->theme->settings->logo)) {
             <img class="sitelogo" src="<?php echo $PAGE->theme->settings->logo;?>" alt="Custom logo here" />
     <?php
 } else {
-    echo $SITE->shortname;
+    echo '<h1>'.$SITE->shortname.'</h1>';
 }
 ?>
         </a>

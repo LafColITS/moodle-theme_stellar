@@ -17332,6 +17332,12 @@ img.sitelogo {
 .navbar-brand {
   padding-top: 0;
 }
+.navbar-brand a {
+  text-decoration: none;
+}
+.navbar-brand a h1 {
+  margin-top: 5px;
+}
 .navbar-inverse {
   border-color: #FFFFFF;
   border-width: 0 0 1px 0;
