@@ -13900,9 +13900,13 @@ ol {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  border-radius: 0;
 }
 .block .header > .dropdown .dropdown-toggle {
   color: inherit;
+}
+.block .header span.coursename a {
+  color: #FFFFFF;
 }
 .block .header h2 {
   margin-top: 0;
@@ -16915,9 +16919,13 @@ fieldset[disabled] #dock .dockedtitle.active {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  border-radius: 0;
 }
 #dockeditempanel .dockeditempanel_hd > .dropdown .dropdown-toggle {
   color: inherit;
+}
+#dockeditempanel .dockeditempanel_hd span.coursename a {
+  color: #FFFFFF;
 }
 #dockeditempanel .dockeditempanel_hd h2 {
   margin-top: 0;
@@ -17609,6 +17617,12 @@ a.editing_highlight img.icon,
 a.editing_showhide img.icon {
   height: 20px;
   width: 20px;
+}
+.panel-heading {
+  border-radius: 0;
+}
+.panel-heading span.coursename a {
+  color: #FFFFFF;
 }
 .loginpanel .guestsub form {
   text-align: center;
