@@ -17583,6 +17583,9 @@ form#coursesearchnavbar {
 .course_category_tree .panel-default > .panel-heading {
   background-color: inherit;
 }
+.course_category_tree .panel-default > .panel-heading .coursename a {
+  color: #006699;
+}
 div#region-main {
   padding-top: 14px;
   padding-bottom: 1px;

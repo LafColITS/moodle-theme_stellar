@@ -1,8 +1,18 @@
-.course_category_tree .category > .info {
-    background-color: inherit;
-    border: none;
-}
-
-.course_category_tree .panel-default > .panel-heading {
-    background-color: inherit;
+.course_category_tree {
+    .category {
+        >.info {
+            background-color: inherit;
+            border: none;
+        }
+    }
+    .panel-default {
+        >.panel-heading {
+            background-color: inherit;
+            .coursename {
+                a {
+                    color: @link-color;
+                }
+            }
+        }
+    }
 }
