@@ -17741,6 +17741,17 @@ form#authmenu table tr td:first-child {
     float: none;
     width: 100%;
   }
+  #page-mod-quiz-edit #block-region-side-pre,
+  #page-mod-quiz-edit #block-region-side-post {
+    clear: both;
+  }
+  #page-mod-quiz-edit div.question div.content div.points {
+    position: static;
+    float: right;
+  }
+  #page-mod-quiz-edit div.question div.content div.questioncontrols {
+    position: static;
+  }
 }
 @media (max-width: 768px) {
   #page-mod-quiz-edit .questionbankwindow.block {

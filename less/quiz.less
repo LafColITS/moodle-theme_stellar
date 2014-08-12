@@ -8,10 +8,25 @@
 }
 
 #page-mod-quiz-edit {
-    div.quizcontents {
-        @media (max-width: @screen-sm-min) {
+    @media (max-width: @screen-sm-min) {
+        div.quizcontents {
             float: none;
             width: 100%;
+        }
+        #block-region-side-pre,
+        #block-region-side-post {
+            clear: both;
+        }
+        div.question {
+            div.content {
+                div.points {
+                    position: static;
+                    float: right;
+                }
+                div.questioncontrols {
+                    position: static;
+                }
+            }
         }
     }
     .questionbankwindow.block {
