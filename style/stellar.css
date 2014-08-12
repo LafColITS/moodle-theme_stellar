@@ -17726,3 +17726,9 @@ th.userfield.useremail[scope="row"] {
 .userprofile .messagebox {
   margin-left: 10px;
 }
+form#authmenu table tr td {
+  padding: 0 0 5px 5px;
+}
+form#authmenu table tr td:first-child {
+  font-weight: bold;
+}
