@@ -31,7 +31,7 @@ $string['choosereadme'] = '
 Authors: Charles Fulton, Jason Alley, Erwin Annulyse
 </p>
 <h3>Reporting bugs</h3>
-<p>Please report bugs on the <a href="https://github.com/LafColITS/theme_stellar/issues">github page</a> for this theme.</p>';
+<p>Please report bugs on the <a href="https://github.com/LafColITS/moodle-theme_stellar/issues">github page</a> for this theme.</p>';
 $string['configtitle'] = 'Stellar theme';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Enter the URL to an image to use as the logo for this site. Should be http://www.yoursite.com/path/to/logo.png';
