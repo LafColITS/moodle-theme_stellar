@@ -17776,3 +17776,11 @@ form#authmenu table tr td:first-child {
 #page-mod-quiz-edit .questionbankwindow.block table#categoryquestions input[type="checkbox"] {
   position: static;
 }
+.path-mod-scheduler table.schedulercommands th {
+  background-color: inherit;
+  border-width: 0;
+  padding-left: 12px;
+}
+.path-mod-scheduler table.schedulercommands th h3 {
+  text-align: left;
+}
