@@ -17567,6 +17567,10 @@ body.zoomin .moodlezoom span.zoomout .badge {
 .breadcrumb-button {
   margin-right: 15px;
 }
+.breadcrumb-button a {
+  float: left;
+  color: #FFFFFF;
+}
 .breadcrumb-nav {
   margin-bottom: 0;
 }
