@@ -1147,7 +1147,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #777777;
+  color: #999999;
 }
 .text-primary {
   color: #822433;
@@ -6802,14 +6802,14 @@ a.dimmed_text:visited,
 .usersuspended a:visited,
 .dimmed_category,
 .dimmed_category a {
-  color: #777777;
+  color: #999999;
 }
 a.disabled:hover,
 a.disabled {
   text-decoration: none;
   cursor: default;
   font-style: italic;
-  color: #777777;
+  color: #999999;
 }
 .activity.label .dimmed_text {
   opacity: 0.5;
@@ -8197,7 +8197,7 @@ ul.dragdrop-keyboard-drag li {
 }
 #page-admin-qtypes .disabled,
 #page-admin-qbehaviours .disabled {
-  color: #777777;
+  color: #999999;
 }
 #page-admin-qtypes #qtypes div,
 #page-admin-qtypes #qtypes form,
@@ -8575,7 +8575,7 @@ textarea.path-admin .roleassigntable input[type="text"] {
 #plugins-check .status-nodb .status,
 #plugins-check .status-uptodate .status,
 #plugins-check .requires-ok {
-  color: #777777;
+  color: #999999;
 }
 #plugins-check .requires ul {
   font-size: 12px;
@@ -8606,7 +8606,7 @@ textarea.path-admin .roleassigntable input[type="text"] {
 #plugins-control-panel .requiredby,
 #plugins-control-panel .pluginname .componentname {
   font-size: 12px;
-  color: #777777;
+  color: #999999;
 }
 #plugins-control-panel .msg td {
   text-align: center;
@@ -9346,7 +9346,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   margin: 2px 5px 2px 5px;
 }
 .course-content .section-summary .section-summary-activities .activity-count {
-  color: #777777;
+  color: #999999;
   font-size: 12px;
   margin: 3px;
   white-space: nowrap;
@@ -9966,13 +9966,13 @@ span.editinstructions {
   margin-right: 2em;
 }
 #course-category-listings .listitem[data-visible="0"] {
-  color: #777777;
+  color: #999999;
 }
 #course-category-listings .listitem[data-visible="0"] a.categoryname {
-  color: #777777;
+  color: #999999;
 }
 #course-category-listings .listitem[data-visible="0"] > div > a {
-  color: #777777;
+  color: #999999;
 }
 #course-category-listings .listitem[data-visible="0"] > div .item-actions .action-show {
   display: inline;
@@ -10093,7 +10093,7 @@ span.editinstructions {
   text-align: center;
 }
 #course-category-listings .listing-pagination-totals.dimmed {
-  color: #777777;
+  color: #999999;
   margin: .4rem 1rem .45rem;
 }
 #course-category-listings .select-a-category .notifymessage,
@@ -10910,7 +10910,7 @@ a.ygtvspacer:hover {
   background-color: #ebebe4;
 }
 .fitem.disabled .fp-btn-choose {
-  color: #777777;
+  color: #999999;
 }
 .fitem.disabled .filepicker-filelist .filepicker-filename {
   display: none;
@@ -14633,7 +14633,7 @@ textareaselect.singleselect {
 }
 .form-defaultinfo,
 .form-label .form-shortname {
-  color: #777777;
+  color: #999999;
   font-size: 12px;
 }
 .form-setting .form-checkbox input {
@@ -15290,7 +15290,7 @@ div#dock {
   text-align: center;
 }
 .path-backup .backup_progress .backup_stage {
-  color: #777777;
+  color: #999999;
 }
 .path-backup .backup_progress .backup_stage.backup_stage_current {
   font-weight: bold;
@@ -15356,7 +15356,7 @@ div#dock {
 .backup-restore .detail-pair-value > .sub-detail {
   display: block;
   font-size: 12px;
-  color: #777777;
+  color: #999999;
 }
 .backup-restore > .singlebutton {
   text-align: right;
@@ -17641,6 +17641,12 @@ a.editing_showhide img.icon {
 }
 .panel-heading span.coursename a {
   color: #FFFFFF;
+}
+a.dimmed img.iconlarge {
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 .loginpanel .guestsub form {
   text-align: center;
