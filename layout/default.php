@@ -1,5 +1,5 @@
 <?php
-// This file is part of The Bootstrap 3 Moodle theme
+// This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -101,7 +101,7 @@ if ($knownregionpre || $knownregionpost) {
 if ($knownregionpre || $knownregionpost) {
 ?>
         <div class="singlebutton visible-xs col-sm-2 skipregions">
-            <a href="#blockregion" class="btn btn-default">Skip to blocks</a>
+            <a href="#blockregion" class="btn btn-default"><?php echo get_string('skiptoblocks', 'theme_stellar'); ?></a>
         </div>
 <?php
 }

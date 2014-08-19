@@ -36,3 +36,4 @@ $string['configtitle'] = 'Stellar theme';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Enter the URL to an image to use as the logo for this site. Should be http://www.yoursite.com/path/to/logo.png';
 $string['pluginname'] = 'Stellar';
+$string['skiptoblocks'] = 'Skip to blocks';
