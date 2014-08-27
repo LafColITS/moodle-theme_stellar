@@ -17799,3 +17799,6 @@ form#authmenu table tr td:first-child {
 .path-mod-scheduler table.schedulercommands th h3 {
   text-align: left;
 }
+#page-my-index #region-main {
+  padding-top: 0;
+}
