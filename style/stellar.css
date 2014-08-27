@@ -17594,6 +17594,10 @@ div#region-main ul:not(.topics):not(.section),
 div#region-main ol {
   margin-left: 30px;
 }
+div#region-main .course-content ul.topics li.section .left,
+div#region-main .course-content ul.topics li.section .right {
+  width: 0;
+}
 aside.block-region {
   background-color: #f1f2f2;
   padding-top: 15px;
@@ -17622,6 +17626,11 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
   h3.sectionname {
     margin-left: 40px;
     margin-right: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .section .activity .mod-indent-outer {
+    padding-left: 0;
   }
 }
 a.editing_highlight img.icon,

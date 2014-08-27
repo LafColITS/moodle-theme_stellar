@@ -4,6 +4,15 @@ div#region-main {
     ul:not(.topics):not(.section), ol {
         margin-left: @list-margin-adjustment;
     }
+    .course-content {
+        ul.topics {
+            li.section {
+                .left, .right {
+                    width: 0;
+                }
+            }
+        }
+    }
 }
 
 aside.block-region {
@@ -40,6 +49,16 @@ nav.breadcrumb-nav {
     h3.sectionname {
         margin-left: 40px;
         margin-right: 40px;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .section {
+        .activity {
+            .mod-indent-outer {
+                padding-left: 0;
+            }
+        }
     }
 }
 
