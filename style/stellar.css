@@ -17355,13 +17355,6 @@ a.navbar-brand h1 {
   border-right-width: 0;
   border-radius: 0;
 }
-.skipregions {
-  padding-top: 15px;
-}
-.skipregions > a.btn-default {
-  background-color: #822433;
-  color: #FFFFFF;
-}
 .block_filtered_course_list .course-section {
   padding-left: 0;
 }
@@ -17567,7 +17560,7 @@ body.zoomin .moodlezoom span.zoomout .badge {
 .breadcrumb-button {
   margin-right: 15px;
 }
-.breadcrumb-button a {
+.breadcrumb-button a:not(.btn) {
   float: left;
   color: #FFFFFF;
 }
