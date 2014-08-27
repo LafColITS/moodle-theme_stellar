@@ -17594,8 +17594,7 @@ div#region-main ul:not(.topics):not(.section),
 div#region-main ol {
   margin-left: 30px;
 }
-div#region-main .course-content ul.topics li.section .left,
-div#region-main .course-content ul.topics li.section .right {
+div#region-main .course-content ul.topics li.section .left {
   width: 0;
 }
 aside.block-region {
