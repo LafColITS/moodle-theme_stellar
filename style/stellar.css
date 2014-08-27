@@ -17650,6 +17650,9 @@ a.dimmed img.iconlarge {
   -moz-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
+.no-overflow {
+  margin-bottom: 0;
+}
 .loginpanel .guestsub form {
   text-align: center;
 }
