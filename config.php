@@ -37,3 +37,12 @@ $THEME->enable_dock = true;
 $THEME->editor_sheets = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'theme_stellar_process_css';
+$THEME->layouts = array(
+    // The site home page.
+    'frontpage' => array(
+        'file' => 'default.php',
+        'regions' => array('side-pre', 'side-post'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => false),
+    ),
+);
