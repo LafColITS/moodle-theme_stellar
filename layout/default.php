@@ -85,6 +85,11 @@ if (!empty($PAGE->theme->settings->logo)) {
 <?php
 echo $OUTPUT->page_heading_button();
 if ($knownregionpre || $knownregionpost) {
+?>
+                <div class="singlebutton visible-xs col-sm-2 skipregions">
+                    <a href="#blockregion" class="btn btn-default"><?php echo get_string('skiptoblocks', 'theme_stellar'); ?></a>
+                </div>
+<?php
     echo $OUTPUT->content_zoom();
 }
 ?>
@@ -97,15 +102,6 @@ if ($knownregionpre || $knownregionpost) {
     </header>
 
     <div id="page-content" class="row">
-<?php
-if ($knownregionpre || $knownregionpost) {
-?>
-        <div class="singlebutton visible-xs col-sm-2 skipregions">
-            <a href="#blockregion" class="btn btn-default"><?php echo get_string('skiptoblocks', 'theme_stellar'); ?></a>
-        </div>
-<?php
-}
-?>
         <div id="region-main" class="<?php echo $regions['content']; ?>">
             <?php
             echo $OUTPUT->course_content_header();
