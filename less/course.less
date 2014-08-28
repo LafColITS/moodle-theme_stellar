@@ -1,11 +1,12 @@
 div#region-main {
     padding-top: 14px;
     padding-bottom: 1px;
-    ul:not(.topics):not(.section), ol {
+    ul:not(.topics):not(.weeks):not(.section), ol {
         margin-left: @list-margin-adjustment;
     }
     .course-content {
-        ul.topics {
+        ul.topics,
+        ul.weeks {
             li.section {
                 .left {
                     width: 0;
@@ -47,8 +48,8 @@ nav.breadcrumb-nav {
 
 @media (max-width: @screen-sm-min) {
     h3.sectionname {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 

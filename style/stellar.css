@@ -17590,11 +17590,12 @@ div#region-main {
   padding-top: 14px;
   padding-bottom: 1px;
 }
-div#region-main ul:not(.topics):not(.section),
+div#region-main ul:not(.topics):not(.weeks):not(.section),
 div#region-main ol {
   margin-left: 30px;
 }
-div#region-main .course-content ul.topics li.section .left {
+div#region-main .course-content ul.topics li.section .left,
+div#region-main .course-content ul.weeks li.section .left {
   width: 0;
 }
 aside.block-region {
@@ -17623,8 +17624,8 @@ nav.breadcrumb-nav ol.breadcrumb a:visited {
 }
 @media (max-width: 768px) {
   h3.sectionname {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media (min-width: 768px) {
