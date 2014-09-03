@@ -1,0 +1,75 @@
+.dir-ltr.editing.used-region-side-post.used-region-side-pre {
+    #region-main {
+        .make-sm-column(@region-main-pre-post);
+        .make-lg-column(@region-main-pre-post);
+        .make-sm-column-push(@region-side-pre);
+        .make-lg-column-push(@region-side-pre);
+    }
+    #block-region-side-post {
+        .make-sm-column(@region-side-post);
+        .make-lg-column(@region-side-post);
+    }
+    #block-region-side-pre {
+        .make-sm-column(@region-side-pre);
+        .make-lg-column(@region-side-pre);
+        .make-sm-column-pull(@region-main-pre-post);
+        .make-lg-column-pull(@region-main-pre-post);
+    }
+}
+
+.dir-rtl.editing.used-region-side-post.used-region-side-pre {
+    #region-main {
+        .make-sm-column(@region-main-pre-post);
+        .make-lg-column(@region-main-pre-post);
+        .make-sm-column-push(@region-side-pre);
+        .make-lg-column-push(@region-side-pre);
+    }   
+    #block-region-side-pre {
+        .make-sm-column(@region-side-pre);
+        .make-lg-column(@region-side-pre);
+        .make-sm-column-push(@region-side-pre);
+        .make-lg-column-push(@region-side-pre);
+    }   
+    #block-region-side-post {
+        .make-sm-column(@region-side-post);
+        .make-lg-column(@region-side-post);
+        .make-sm-column-pull(@region-main-pre-post);
+        .make-lg-column-pull(@region-main-pre-post);
+    }   
+}
+
+.has_dock {
+    &.empty-region-side-pre.used-region-side-post #region-main {
+        .make-sm-column(@region-main-post);
+        .make-lg-column(@region-main-post);
+    }
+
+    &.empty-region-side-post.used-region-side-pre #region-main {
+        .make-sm-column(@region-main-pre);
+        .make-lg-column(@region-main-pre);
+    }
+}
+
+.has_dock.dir-ltr {
+    &.empty-region-side-post.used-region-side-pre #region-main {
+        .make-sm-column-push(@region-side-pre);
+        .make-lg-column-push(@region-side-pre);
+    }
+
+    &.empty-region-side-post.used-region-side-pre #block-region-side-pre {
+        .make-sm-column-pull(@region-main-pre);
+        .make-lg-column-pull(@region-main-pre);
+    }
+}
+
+.has_dock.dir-rtl {
+    &.empty-region-side-pre.used-region-side-post #region-main {
+        .make-sm-column-push(@region-side-post);
+        .make-lg-column-push(@region-side-post);
+    }
+
+    &.empty-region-side-pre.used-region-side-post #block-region-side-post {
+        .make-sm-column-pull(@region-main-post);
+        .make-lg-column-pull(@region-main-post);
+    }
+}

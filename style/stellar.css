@@ -17802,3 +17802,237 @@ form#authmenu table tr td:first-child {
 #page-my-index #region-main {
   padding-top: 0;
 }
+.dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
+    left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #region-main {
+    left: 25%;
+  }
+}
+.dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+    float: left;
+    width: 25%;
+  }
+}
+.dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    right: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    right: 50%;
+  }
+}
+.dir-rtl.editing.used-region-side-post.used-region-side-pre #region-main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #region-main {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #region-main {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #region-main {
+    left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #region-main {
+    left: 25%;
+  }
+}
+.dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    left: 25%;
+  }
+}
+.dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+    right: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .dir-rtl.editing.used-region-side-post.used-region-side-pre #block-region-side-post {
+    right: 50%;
+  }
+}
+.has_dock.empty-region-side-pre.used-region-side-post #region-main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .has_dock.empty-region-side-pre.used-region-side-post #region-main {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .has_dock.empty-region-side-pre.used-region-side-post #region-main {
+    float: left;
+    width: 75%;
+  }
+}
+.has_dock.empty-region-side-post.used-region-side-pre #region-main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .has_dock.empty-region-side-post.used-region-side-pre #region-main {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .has_dock.empty-region-side-post.used-region-side-pre #region-main {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .has_dock.dir-ltr.empty-region-side-post.used-region-side-pre #region-main {
+    left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .has_dock.dir-ltr.empty-region-side-post.used-region-side-pre #region-main {
+    left: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .has_dock.dir-ltr.empty-region-side-post.used-region-side-pre #block-region-side-pre {
+    right: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .has_dock.dir-ltr.empty-region-side-post.used-region-side-pre #block-region-side-pre {
+    right: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .has_dock.dir-rtl.empty-region-side-pre.used-region-side-post #region-main {
+    left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .has_dock.dir-rtl.empty-region-side-pre.used-region-side-post #region-main {
+    left: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .has_dock.dir-rtl.empty-region-side-pre.used-region-side-post #block-region-side-post {
+    right: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .has_dock.dir-rtl.empty-region-side-pre.used-region-side-post #block-region-side-post {
+    right: 75%;
+  }
+}
