@@ -17682,7 +17682,10 @@ a.assignrolelink {
 a.btn {
   text-decoration: none;
 }
-#page-grade-report-grader-index #user-grades {
+.path-grade-report-grader #fixed_column {
+  margin-top: 4px;
+}
+.path-grade-report-grader #user-grades {
   margin-top: 20px;
 }
 .nav-tabs > li > a,
