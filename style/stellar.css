@@ -2427,8 +2427,7 @@ input[type="month"].input-lg {
   line-height: 46px;
 }
 .form-group,
-.mform .fcontainer .fitem,
-.mform fieldset .fitem,
+.mform .fitem,
 .form-item {
   margin-bottom: 15px;
 }
@@ -2713,8 +2712,7 @@ select[multiple].input-lg {
   min-height: 27px;
 }
 .form-horizontal .form-group,
-.mform .fcontainer .fitem,
-.mform fieldset .fitem,
+.mform .fitem,
 .form-item {
   margin-left: -15px;
   margin-right: -15px;
@@ -6015,18 +6013,14 @@ button.close {
 .box.message .contactselector form#usergroupform fieldset:after,
 .box.message .messagearea .messagehistory .messagehistory .mdl-left:before,
 .box.message .messagearea .messagehistory .messagehistory .mdl-left:after,
-.userprofile .userprofilebox:before,
-.userprofile .userprofilebox:after,
 .mform .fitem_actionbuttons:before,
 .mform .fitem_actionbuttons:after,
 .path-backup .mform .grouped_settings:before,
 .path-backup .mform .grouped_settings:after,
 .path-backup .mform .grouped_settings .fitem:before,
 .path-backup .mform .grouped_settings .fitem:after,
-.mform .fcontainer .fitem:before,
-.mform .fcontainer .fitem:after,
-.mform fieldset .fitem:before,
-.mform fieldset .fitem:after,
+.mform .fitem:before,
+.mform .fitem:after,
 .form-item:before,
 .form-item:after {
   content: " ";
@@ -6049,12 +6043,10 @@ button.close {
 .modal-footer:after,
 .box.message .contactselector form#usergroupform fieldset:after,
 .box.message .messagearea .messagehistory .messagehistory .mdl-left:after,
-.userprofile .userprofilebox:after,
 .mform .fitem_actionbuttons:after,
 .path-backup .mform .grouped_settings:after,
 .path-backup .mform .grouped_settings .fitem:after,
-.mform .fcontainer .fitem:after,
-.mform fieldset .fitem:after,
+.mform .fitem:after,
 .form-item:after {
   clear: both;
 }
@@ -6361,6 +6353,10 @@ button.close {
   -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
 }
+div[role="main"] ul,
+div[role="main"] ol {
+  padding: 0 20px;
+}
 /* some very targetted corrections to roll back nameclashes between
  * Moodle and Bootstrap like .row, .label, .content, .controls
  *
@@ -6471,6 +6467,23 @@ img.icon.hide {
 }
 .section .label {
   text-align: center;
+}
+.atto_image_size input[type="text"] {
+  width: auto;
+}
+div[role="main"] ul,
+div[role="main"] ol {
+  padding-left: 20px;
+  overflow: hidden;
+}
+div[role="main"] ul.section,
+div[role="main"] ol.section,
+div[role="main"] ul.weeks,
+div[role="main"] ol.weeks,
+div[role="main"] ul.topics,
+div[role="main"] ol.topics {
+  padding: 0;
+  overflow: visible;
 }
 /** core.less */
 /** Page layout CSS starts **/
@@ -6825,6 +6838,9 @@ a.disabled {
 .notifytiny li,
 .notifytiny td {
   font-size: 100%;
+}
+.highlight {
+  background: #d9edf7;
 }
 .reportlink {
   text-align: right;
@@ -7871,101 +7887,6 @@ body.jsenabled .formlisting {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-  display: block;
-  margin-left: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:focus,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:active:focus,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.active:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:hover,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:focus {
-  color: #333333;
-  text-decoration: none;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:active,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.disabled,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu[disabled],
-fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:hover,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:focus,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:active,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.active,
-.open > .dropdown-toggle.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu {
-  color: #333333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:active,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.active,
-.open > .dropdown-toggle.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu {
-  background-image: none;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.disabled,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu[disabled],
-fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.disabled:hover,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu[disabled]:hover,
-fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:hover,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.disabled:focus,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu[disabled]:focus,
-fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:focus,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.disabled:active,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu[disabled]:active,
-fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu:active,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.disabled.active,
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu[disabled].active,
-fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .badge {
-  color: #ffffff;
-  background-color: #333333;
-}
 .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .iconsmall {
   margin: 4px 4px 4px 0px;
   padding: 8px 4px 0px 2px;
@@ -7981,7 +7902,6 @@ fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.t
 }
 .moodle-actionmenu[data-enhanced].show {
   position: relative;
-  display: inline-block !important;
 }
 .moodle-actionmenu[data-enhanced].show .menu {
   position: absolute;
@@ -8703,16 +8623,7 @@ textarea.path-admin .roleassigntable input[type="text"] {
 #page-admin-roles-assign div.box.generalbox .alert-link {
   color: #843534;
 }
-.calendartable {
-  width: 100%;
-}
-.calendartable th,
-.calendartable td {
-  width: 14%;
-  vertical-align: top;
-  text-align: center;
-  border: 0;
-}
+/* calendar.less */
 .calendar_event_course {
   background-color: #ffd3bd;
 }
@@ -8724,6 +8635,16 @@ textarea.path-admin .roleassigntable input[type="text"] {
 }
 .calendar_event_user {
   background-color: #dce7ec;
+}
+.path-calendar .calendartable {
+  width: 100%;
+}
+.path-calendar .calendartable th,
+.path-calendar .calendartable td {
+  width: 14%;
+  vertical-align: top;
+  text-align: center;
+  border: 0;
 }
 .path-calendar .calendar-controls .previous,
 .path-calendar .calendar-controls .next,
@@ -8741,6 +8662,14 @@ textarea.path-admin .roleassigntable input[type="text"] {
 }
 .path-calendar .calendar-controls .next {
   text-align: right;
+}
+.path-calendar .filters table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  width: 100%;
+}
+.path-calendar .cal_courses_flt label {
+  margin-right: .45em;
 }
 .path-calendar .maincalendar {
   vertical-align: top;
@@ -8768,227 +8697,62 @@ textarea.path-admin .roleassigntable input[type="text"] {
 .path-calendar .maincalendar .calendarmonth td {
   height: 5em;
 }
+.path-calendar .maincalendar .calendar-controls .previous,
+.path-calendar .maincalendar .calendar-controls .next {
+  width: 30%;
+}
 .path-calendar .maincalendar .calendar-controls .current {
   width: 39.95%;
-}
-.path-calendar .maincalendar .cal_courses_flt select {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555555;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.path-calendar .maincalendar .cal_courses_flt select:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-.path-calendar .maincalendar .cal_courses_flt select::-moz-placeholder {
-  color: #777777;
-  opacity: 1;
-}
-.path-calendar .maincalendar .cal_courses_flt select:-ms-input-placeholder {
-  color: #777777;
-}
-.path-calendar .maincalendar .cal_courses_flt select::-webkit-input-placeholder {
-  color: #777777;
-}
-.path-calendar .maincalendar .cal_courses_flt select[disabled],
-.path-calendar .maincalendar .cal_courses_flt select[readonly],
-fieldset[disabled] .path-calendar .maincalendar .cal_courses_flt select {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-  opacity: 1;
-}
-textarea.path-calendar .maincalendar .cal_courses_flt select {
-  height: auto;
 }
 .path-calendar .maincalendar .controls {
   width: 98%;
   margin: 10px auto;
 }
-.path-calendar .maincalendar .eventlist .event {
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  border: 1px solid transparent;
+.path-calendar .maincalendar .calendar_event_course,
+.path-calendar .maincalendar .calendar_event_global,
+.path-calendar .maincalendar .calendar_event_group,
+.path-calendar .maincalendar .calendar_event_user {
+  border-width: 1px 1px 1px 12px;
+  border-style: solid;
+}
+.path-calendar .maincalendar .calendar_event_course {
+  border-color: #ffd3bd;
+}
+.path-calendar .maincalendar .calendar_event_global {
+  border-color: #d6f8cd;
+}
+.path-calendar .maincalendar .calendar_event_group {
+  border-color: #fee7ae;
+}
+.path-calendar .maincalendar .calendar_event_user {
+  border-color: #dce7ec;
+}
+.path-calendar .maincalendar .calendar-event-panel {
+  background-color: #eeeeee;
+  border: 2px solid #eeeeee;
+}
+.path-calendar .maincalendar .calendar-event-panel .yui3-overlay-content {
+  padding: 19px;
+  background-color: #fdfdfd;
+  border: 1px solid #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 0;
-  border-color: #eeeeee;
-  width: 100%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.path-calendar .maincalendar .eventlist .event > .list-group {
-  margin-bottom: 0;
+.path-calendar .maincalendar .calendar-controls .current {
+  font-family: inherit;
+  font-weight: normal;
+  color: inherit;
+  font-size: 25px;
+  line-height: 1.2;
 }
-.path-calendar .maincalendar .eventlist .event > .list-group .list-group-item {
-  border-width: 1px 0;
-  border-radius: 0;
+.path-calendar .maincalendar .calendartable td,
+.path-calendar .maincalendar .calendartable li {
+  padding: 5px;
 }
-.path-calendar .maincalendar .eventlist .event > .list-group:first-child .list-group-item:first-child {
-  border-top: 0;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .list-group:last-child .list-group-item:last-child {
-  border-bottom: 0;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .table,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table,
-.path-calendar .maincalendar .eventlist .event > .panel-collapse > .table {
-  margin-bottom: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table:first-child > thead:first-child > tr:first-child th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
-  border-top-left-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .table:first-child > thead:first-child > tr:first-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table:first-child > thead:first-child > tr:first-child th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
-  border-top-right-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .table:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tbody:last-child > tr:last-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
-  border-bottom-left-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tbody:last-child > tr:last-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
-  border-bottom-right-radius: 3px;
-}
-.path-calendar .maincalendar .eventlist .event > .panel-body + .table,
-.path-calendar .maincalendar .eventlist .event > .panel-body + .table-responsive {
-  border-top: 1px solid #dddddd;
-}
-.path-calendar .maincalendar .eventlist .event > .table > tbody:first-child > tr:first-child th,
-.path-calendar .maincalendar .eventlist .event > .table > tbody:first-child > tr:first-child td {
-  border-top: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table-bordered,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered {
-  border: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table-bordered > thead > tr > th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > thead > tr > th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr > th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tfoot > tr > th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > thead > tr > td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > thead > tr > td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr > td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tfoot > tr > td:first-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-  border-left: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table-bordered > thead > tr > th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > thead > tr > th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr > th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tfoot > tr > th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > thead > tr > td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > thead > tr > td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr > td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tfoot > tr > td:last-child,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-  border-right: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table-bordered > thead > tr:first-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > thead > tr:first-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr:first-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr:first-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > thead > tr:first-child > th,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > thead > tr:first-child > th,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr:first-child > th,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr:first-child > th {
-  border-bottom: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr:last-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tfoot > tr:last-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tbody > tr:last-child > th,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-.path-calendar .maincalendar .eventlist .event > .table-bordered > tfoot > tr:last-child > th,
-.path-calendar .maincalendar .eventlist .event > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
-  border-bottom: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .table-responsive {
-  border: 0;
-  margin-bottom: 0;
-}
-.path-calendar .maincalendar .eventlist .event > .panel-heading {
-  color: #ffffff;
-  background-color: #822433;
-  border-color: #eeeeee;
-}
-.path-calendar .maincalendar .eventlist .event > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #eeeeee;
-}
-.path-calendar .maincalendar .eventlist .event > .panel-heading .badge {
-  color: #822433;
-  background-color: #ffffff;
-}
-.path-calendar .maincalendar .eventlist .event > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #eeeeee;
-}
-.path-calendar .maincalendar .eventlist .event .topic .name {
-  float: left;
-}
-.path-calendar .maincalendar .eventlist .event .side {
-  width: 32px;
-}
-.path-calendar .maincalendar .eventlist .event .commands a {
-  margin: 0 3px;
+.path-calendar .maincalendar .calendartable li {
+  padding-left: 10px;
+  text-align: left;
 }
 .path-calendar .maincalendar .header {
   overflow: hidden;
@@ -8996,188 +8760,173 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 .path-calendar .maincalendar .header .buttons {
   float: right;
 }
-.path-calendar .filters table {
-  border-collapse: separate;
-  border-spacing: 2px;
+.path-calendar .maincalendar .eventlist .event {
   width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  position: relative;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fdfdfd;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.path-calendar .cal_courses_flt label {
-  margin-right: .45em;
+.path-calendar .maincalendar .eventlist .event .picture {
+  vertical-align: text-top;
 }
-.path-calendar .maincalendar .calendar-controls .previous,
-.path-calendar .maincalendar .calendar-controls .next {
-  width: 30%;
+.path-calendar .maincalendar .eventlist .event .topic .name {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  float: left;
 }
-.path-calendar .maincalendar .eventlist .event .subscription,
-.path-calendar .maincalendar .eventlist .event .course {
+.path-calendar .maincalendar .eventlist .event .topic .name,
+.path-calendar .maincalendar .eventlist .event .topic .course {
+  margin-bottom: 5px;
+}
+.path-calendar .maincalendar .eventlist .event .topic .date {
+  float: right;
+}
+.path-calendar .maincalendar .eventlist .event .course,
+.path-calendar .maincalendar .eventlist .event .subscription {
   float: left;
   clear: left;
 }
+.path-calendar .maincalendar .eventlist .event .side {
+  width: 22px;
+}
+.path-calendar .maincalendar .eventlist .event .description {
+  background-color: #FFF;
+  padding: 5px;
+}
+.path-calendar .maincalendar .eventlist .event .description .commands {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 3px;
+}
+.path-calendar .maincalendar .eventlist .event .commands a {
+  margin: 0 3px;
+}
+.dir-rtl.path-calendar .cal_courses_flt label {
+  margin-left: .45em;
+  margin-right: 0;
+}
+.dir-rtl.path-calendar .maincalendar .calendar_event_course,
+.dir-rtl.path-calendar .maincalendar .calendar_event_global,
+.dir-rtl.path-calendar .maincalendar .calendar_event_group,
+.dir-rtl.path-calendar .maincalendar .calendar_event_user {
+  border-left-width: 1px;
+  border-right-width: 12px;
+}
+.dir-rtl.path-calendar .maincalendar .calendar-controls .next {
+  text-align: left;
+}
+.dir-rtl.path-calendar .maincalendar .calendar-controls .previous {
+  text-align: right;
+}
+.dir-rtl.path-calendar .maincalendar .calendartable td,
+.dir-rtl.path-calendar .maincalendar .calendartable li {
+  text-align: right;
+}
+.dir-rtl.path-calendar .maincalendar .calendartable li {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.dir-rtl.path-calendar .maincalendar .header .buttons {
+  float: left;
+}
+.dir-rtl.path-calendar .maincalendar .eventlist .event .topic .name {
+  float: right;
+}
+.dir-rtl.path-calendar .maincalendar .eventlist .event .topic .date {
+  float: left;
+}
+.dir-rtl.path-calendar .maincalendar .eventlist .event .description .commands {
+  right: inherit;
+  left: 0;
+}
+.dir-rtl.path-calendar .maincalendar .eventlist .event .course,
+.dir-rtl.path-calendar .maincalendar .eventlist .event .subscription {
+  float: right;
+  clear: right;
+}
 #page-calendar-export .indent {
   padding-left: 20px;
+}
+.block .minicalendar {
+  max-width: 280px;
+  margin: 0 auto;
+  width: 100%;
 }
 .block .minicalendar th,
 .block .minicalendar td {
   padding: 2px;
   font-size: 0.8em;
+  text-align: center;
+}
+.block .minicalendar td.weekend {
+  color: #999999;
+}
+.block .calendar-event-panel {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+}
+.block .calendar-event-panel .yui3-overlay-content {
+  padding: 19px;
+  background-color: #fdfdfd;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.block .calendar-event-panel .yui3-overlay-content h2.eventtitle {
+  line-height: 1.2;
+  font-size: 18px;
+}
+.block .calendar-event-panel .yui3-overlay-content .eventcontent img {
+  padding-right: 5px;
+}
+.block .calendar-controls .previous,
+.block .calendar-controls .current,
+.block .calendar-controls .next {
+  display: block;
+  float: left;
+}
+.block .calendar-controls .previous {
+  text-align: left;
+  width: 12%;
+}
+.block .calendar-controls .current {
+  text-align: center;
+  width: 76%;
+}
+.block .calendar-controls .next {
+  text-align: right;
+  width: 12%;
 }
 .block .calendar_filters ul {
   list-style: none;
   margin: 0;
 }
 .block .calendar_filters li {
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 .block .calendar_filters li span img {
-  padding: 0 .2em;
+  padding: 0 0.2em;
 }
 .block .calendar_filters .eventname {
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
-.block .minicalendar {
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.block .minicalendar td.weekend {
-  color: #f0ad4e;
-}
-.block .minicalendar .calendar-controls .previous {
-  text-align: left;
-  display: block;
-  float: left;
-  width: 12%;
-}
-.block .minicalendar .calendar-controls .current {
-  float: left;
-  text-align: center;
-  display: block;
-  width: 76%;
-}
-.block .minicalendar .calendar-controls .next {
-  text-align: right;
-  display: block;
-  float: left;
-  width: 12%;
-}
-.block .minicalendar .content h3.eventskey {
+.block .content h3.eventskey {
   margin-top: 0.5em;
 }
-.block .minicalendar .calendar-event-panel {
-  border: 0;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1060;
-  display: none;
-  max-width: 276px;
-  padding: 1px;
-  text-align: left;
-  background-color: #ffffff;
-  background-clip: padding-box;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  white-space: normal;
-  display: block;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.top {
-  margin-top: -10px;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.right {
-  margin-left: 10px;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.bottom {
-  margin-top: 10px;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.left {
-  margin-left: -10px;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.top > .arrow {
-  left: 50%;
-  margin-left: -11px;
-  border-bottom-width: 0;
-  border-top-color: #999999;
-  border-top-color: rgba(0, 0, 0, 0.25);
-  bottom: -11px;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.top > .arrow:after {
-  content: " ";
-  bottom: 1px;
-  margin-left: -10px;
-  border-bottom-width: 0;
-  border-top-color: #ffffff;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.right > .arrow {
-  top: 50%;
-  left: -11px;
-  margin-top: -11px;
-  border-left-width: 0;
-  border-right-color: #999999;
-  border-right-color: rgba(0, 0, 0, 0.25);
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.right > .arrow:after {
-  content: " ";
-  left: 1px;
-  bottom: -10px;
-  border-left-width: 0;
-  border-right-color: #ffffff;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.bottom > .arrow {
-  left: 50%;
-  margin-left: -11px;
-  border-top-width: 0;
-  border-bottom-color: #999999;
-  border-bottom-color: rgba(0, 0, 0, 0.25);
-  top: -11px;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.bottom > .arrow:after {
-  content: " ";
-  top: 1px;
-  margin-left: -10px;
-  border-top-width: 0;
-  border-bottom-color: #ffffff;
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.left > .arrow {
-  top: 50%;
-  right: -11px;
-  margin-top: -11px;
-  border-right-width: 0;
-  border-left-color: #999999;
-  border-left-color: rgba(0, 0, 0, 0.25);
-}
-.block .minicalendar .calendar-event-panel .yui3-overlay-content.left > .arrow:after {
-  content: " ";
-  right: 1px;
-  border-right-width: 0;
-  border-left-color: #ffffff;
-  bottom: -10px;
-}
-.block .minicalendar .calendar-event-panel h2 {
-  margin: 0;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0;
-}
-.block .minicalendar .calendar-event-panel .yui3-widget-bd {
-  padding: 9px 14px;
-  border: 1px dotted rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  margin: 10px;
-  background-color: #ffffff;
-}
-.block .minicalendar .calendar-event-panel .yui3-widget-bd .eventcontent {
-  text-align: left;
-  margin: 0;
-  font-size: 14px;
+@media (min-width: 768px) {
+  #page-calender-view .container-fluid {
+    min-width: 1024px;
+  }
 }
 /* course.less */
 /* COURSE CONTENT */
@@ -9203,10 +8952,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 .section_add_menus .horizontal form {
   display: inline;
 }
-.site-topic ul.section,
-.course-content ul.section {
-  margin: 1em;
-}
 .section .spinner {
   height: 16px;
   width: 16px;
@@ -9224,13 +8969,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   position: absolute;
   left: 0;
   top: 0;
-}
-.section .activity .mod-indent-outer {
-  /**
-             * Add appropriate padding such that nothing overlaps the
-             * absolute positioned move icon.
-             */
-  padding-left: 32px;
 }
 .section .activity .actions {
   position: absolute;
@@ -9259,7 +8997,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   height: inherit;
 }
 .section .label .mod-indent-outer {
-  padding-left: 24px;
+  padding-left: 0px;
   display: block;
 }
 .section .filler {
@@ -9278,9 +9016,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   padding-bottom: initial;
   vertical-align: text-bottom;
 }
-.editing .section .activity .mod-indent-outer {
-  padding-left: 32px;
-}
 .activity img.activityicon {
   margin-right: 6px;
   vertical-align: text-bottom;
@@ -9293,9 +9028,26 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 .editing .section .activity .activityinstance {
   padding-right: 200px;
 }
+.editing .section .activity .mod-indent-outer {
+  padding-left: 32px;
+}
+.editing .section .activity:hover,
+.editing .section .activity.action-menu-shown {
+  background-color: #eeeeee;
+}
+.editing .course-content ul li.section.main .left,
+.editing .course-content ul li.section.main .right {
+  display: inherit;
+}
+.editing ul.weeks h3.sectionname {
+  white-space: normal;
+}
 .editing_show + .editing_assign,
 .editing_hide + .editing_assign {
   margin-left: 20px;
+}
+.section {
+  padding: 0;
 }
 .section .activity .commands {
   white-space: nowrap;
@@ -9323,10 +9075,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 .section .activity .contentafterlink {
   margin-top: 0.5em;
   margin-left: 30px;
-}
-.editing .section .activity:hover,
-.editing .section .activity.action-menu-shown {
-  background-color: #eeeeee;
 }
 .course-content {
   margin-top: 0;
@@ -9391,20 +9139,18 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   border-bottom: 2px solid #eee;
   margin-top: 0;
 }
+.course-content ul li.section.main .left,
+.course-content ul li.section.main .right {
+  display: none;
+}
 .course-content ul li.section.hidden {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-.course-content ul.topics li.section {
-  padding-bottom: 20px;
-}
-.course-content ul.topics li.section .summary {
-  margin-left: 25px;
-}
 .course-content ul.topics li.section .content,
 .course-content ul.weeks li.section .content {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
   padding: 0;
 }
 .path-course-view .completionprogress {
@@ -9430,9 +9176,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 }
 .path-course-view .single-section .completionprogress {
   margin-right: 5px;
-}
-.path-course-view .section .summary {
-  line-height: normal;
 }
 .path-course-view li.activity span.autocompletion img {
   vertical-align: text-bottom;
@@ -9468,9 +9211,6 @@ li.section.hidden span.commands a.editing_show {
 }
 ul.weeks h3.sectionname {
   white-space: nowrap;
-}
-.editing ul.weeks h3.sectionname {
-  white-space: normal;
 }
 .single-section h3.sectionname {
   text-align: center;
@@ -9926,6 +9666,7 @@ span.editinstructions {
   border-top-color: #dddddd;
 }
 #course-category-listings .item-actions {
+  float: left;
   margin-right: 1em;
   display: inline-block;
 }
@@ -11119,6 +10860,14 @@ a.ygtvspacer:hover {
 }
 .filemanager.fp-select.fp-folder .fp-file-download {
   display: none;
+}
+.filemanager .fp-img-downloading {
+  display: none;
+  padding-top: 7px;
+}
+.filemanager .filemanager-updating {
+  display: none;
+  text-align: center;
 }
 .fm-operation {
   font-weight: bold;
@@ -12467,11 +12216,39 @@ textareatextarea {
 #chooseqtype .selected .qtypesummary {
   display: block;
 }
+#categoryquestions {
+  margin: 0;
+}
+#categoryquestions td,
+#categoryquestions th {
+  padding: 0 0.2em;
+}
+#categoryquestions th {
+  text-align: left;
+  font-weight: normal;
+}
+#categoryquestions .checkbox {
+  padding-left: 5px;
+}
+#categoryquestions .checkbox input[type="checkbox"] {
+  margin-left: 0px;
+  float: none;
+}
+#categoryquestions img.iconsmall {
+  padding: 0;
+}
+#categoryquestions .iconcol {
+  padding: 3px;
+}
+#categoryquestions label {
+  margin: 0;
+}
 #page-mod-quiz-edit div.questionbankwindow div.header {
   margin: 0;
 }
 #page-mod-quiz-edit div.questionbankwindow.block {
   padding: 0;
+  border-width: 1px;
 }
 #categoryquestions .checkbox {
   display: table-cell;
@@ -12479,6 +12256,7 @@ textareatextarea {
 }
 #categoryquestions .checkbox input[type="checkbox"] {
   margin-left: 0px;
+  position: relative;
 }
 #categoryquestions img.iconsmall {
   margin: 0;
@@ -12508,6 +12286,8 @@ body.path-question-type .fitem_fgroup .accesshide {
   left: 0;
   position: static;
   padding-right: .3em;
+  width: auto;
+  height: auto;
 }
 .que {
   clear: left;
@@ -12535,6 +12315,10 @@ body.path-question-type .fitem_fgroup .accesshide {
 .que .info > div {
   font-size: 0.8em;
   margin-top: 0.7em;
+}
+body.path-question-type .mform fieldset.hidden {
+  padding: 0;
+  margin: 0.7em 0 0;
 }
 .que .info .questionflag.editable {
   cursor: pointer;
@@ -12757,6 +12541,30 @@ a.que .correctness:focus {
 #page-question-preview #techinfo {
   margin: 1em 0;
 }
+#questionbank + .container {
+  padding: 0;
+}
+#page-mod-quiz-edit .box.generalbox.questionbank {
+  padding: 0.5em;
+}
+#page-mod-quiz-edit .questionbank .categorypagingbarcontainer,
+#page-mod-quiz-edit .questionbank .categoryquestionscontainer,
+#page-mod-quiz-edit .questionbank .choosecategory {
+  padding: 0;
+}
+#page-mod-quiz-edit .questionbank .choosecategory select {
+  width: 100%;
+}
+#page-mod-quiz-edit div.questionbank .categoryquestionscontainer {
+  margin: 0;
+  background: transparent;
+}
+#page-mod-quiz-edit #categoryquestions > thead {
+  background: #FFF;
+}
+#page-mod-quiz-edit #categoryquestions > tbody > tr:nth-of-type(even) {
+  background: #e4e4e4;
+}
 #page-mod-quiz-edit .questionbankwindow div.header {
   color: #444;
   text-shadow: none;
@@ -12775,6 +12583,59 @@ a.que .correctness:focus {
 #page-mod-quiz-edit .questionbankwindow div.header a:hover {
   color: #00334d;
 }
+#page-mod-quiz-edit .createnewquestion {
+  padding: 0.3em 0;
+}
+#page-mod-quiz-edit .createnewquestion div,
+#page-mod-quiz-edit .createnewquestion input {
+  margin: 0;
+}
+#page-mod-quiz-edit .questionbankwindow div.header .title {
+  color: #333333;
+}
+#page-mod-quiz-edit div.container div.generalbox {
+  background-color: transparent;
+  padding: 1.5em;
+}
+#page-mod-quiz-edit .categoryinfo {
+  background-color: transparent;
+  border-bottom: none;
+}
+#page-mod-quiz-edit .createnewquestion .singlebutton input {
+  margin-bottom: 0;
+}
+#page-mod-quiz-edit div.questionbank .categorysortopotionscontainer,
+#page-mod-quiz-edit div.questionbank .categoryselectallcontainer {
+  padding: 0 0 1.5em 0;
+}
+#page-mod-quiz-edit div.questionbank .categorypagingbarcontainer {
+  background-color: transparent;
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+#page-mod-quiz-edit div.questionbank .categorypagingbarcontainer .paging {
+  padding: 0 0.3em;
+}
+#page-mod-quiz-edit div.question div.content div.questioncontrols {
+  background-color: #f1f2f2;
+}
+#page-mod-quiz-edit div.question div.content div.points {
+  margin-top: -0.5em;
+  padding-bottom: 0em;
+  border: none;
+  background-color: #f1f2f2;
+  position: static;
+  width: 12.1em;
+  float: right;
+  margin-right: 60px;
+}
+#page-mod-quiz-edit div.question div.content div.points br {
+  display: none;
+}
+#page-mod-quiz-edit div.question div.content div.points label {
+  display: inline-block;
+}
 #page-mod-quiz-edit .questionbankwindow div.header .title {
   color: #333333;
 }
@@ -12786,9 +12647,7 @@ a.que .correctness:focus {
   background-color: #f1f2f2;
   border-bottom: none;
 }
-#page-mod-quiz-edit div.questionbank .categoryquestionscontainer,
 #page-mod-quiz-edit div.questionbank .categorysortopotionscontainer,
-#page-mod-quiz-edit div.questionbank .categorypagingbarcontainer,
 #page-mod-quiz-edit div.questionbank .categoryselectallcontainer {
   padding: 0 0 1.5em 0;
 }
@@ -12798,9 +12657,6 @@ a.que .correctness:focus {
   margin: 0 -1.2em;
   border-top: none;
   border-bottom: none;
-}
-#page-mod-quiz-edit div.questionbank .categoryquestionscontainer {
-  margin: 0 -1.2em -1em -1.2em;
 }
 #page-mod-quiz-edit div.question div.content div.questioncontrols {
   background-color: #f1f2f2;
@@ -12813,9 +12669,6 @@ a.que .correctness:focus {
 }
 #page-mod-quiz-edit div.question div.content div.points label {
   display: inline-block;
-}
-#page-mod-quiz-edit .question .questioncontentcontainer .singlequestion label {
-  display: inherit;
 }
 #page-mod-quiz-edit div.quizpage .pagecontent .pagestatus {
   background-color: #f1f2f2;
@@ -12850,6 +12703,7 @@ a.que .correctness:focus {
 }
 #page-mod-quiz-edit div.questionbank .modulespecificbuttonscontainer input {
   margin-left: 0;
+  margin-bottom: 0.3em;
 }
 #page-mod-quiz-edit div.questionbank .modulespecificbuttonscontainer input + input {
   margin-left: 5px;
@@ -12875,16 +12729,15 @@ a#hidebankcmd {
 }
 .que label {
   display: inline;
-}
-/* Add a little padding to the answer sections of edit question forms. */
-.path-question-type #id_answerhdr .fitem .fitemtitle,
-.path-question-type #id_answerhdr .fitem .felement {
-  margin-left: 6px;
-  margin-right: 6px;
+  font-weight: normal;
 }
 .path-question-type #id_answerhdr .fitem_feditor .felement {
   margin-left: 0px;
   margin-right: 0px;
+}
+body.path-question-type .mform fieldset.hidden {
+  padding: 0;
+  margin: 0.7em 0 0;
 }
 /* user.less */
 .user-box {
@@ -13215,47 +13068,115 @@ a#hidebankcmd {
 .userprofile > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #eeeeee;
 }
-.userprofile .userprofilebox {
-  margin-left: -15px;
-  margin-right: -15px;
-}
 .userprofile .userprofilebox .profilepicture {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .userprofile .userprofilebox .profilepicture {
-    float: left;
-    width: 16.66666667%;
-  }
+  float: left;
 }
 .userprofile .userprofilebox .profilepicture a {
-  display: block;
+  display: inline-block;
   margin: 10px;
 }
 .userprofile .userprofilebox .profilepicture a img {
   border-radius: 6px;
 }
-.userprofile .userprofilebox .descriptionbox {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .userprofile .userprofilebox .descriptionbox {
-    float: left;
-    width: 83.33333333%;
-  }
-}
 .userprofile .userprofilebox .descriptionbox .description {
   margin: 10px;
+}
+.userprofile .userprofilebox .descriptionbox .list {
+  margin: 0 10px;
 }
 .userprofile .fullprofilelink {
   text-align: center;
   margin: 10px;
+}
+.userprofile .messagebox {
+  margin: 10px;
+}
+.userprofile .messagebox a {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.userprofile .messagebox a:focus,
+.userprofile .messagebox a:active:focus,
+.userprofile .messagebox a.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.userprofile .messagebox a:hover,
+.userprofile .messagebox a:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.userprofile .messagebox a:active,
+.userprofile .messagebox a.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.userprofile .messagebox a.disabled,
+.userprofile .messagebox a[disabled],
+fieldset[disabled] .userprofile .messagebox a {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.userprofile .messagebox a:hover,
+.userprofile .messagebox a:focus,
+.userprofile .messagebox a:active,
+.userprofile .messagebox a.active,
+.open > .dropdown-toggle.userprofile .messagebox a {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.userprofile .messagebox a:active,
+.userprofile .messagebox a.active,
+.open > .dropdown-toggle.userprofile .messagebox a {
+  background-image: none;
+}
+.userprofile .messagebox a.disabled,
+.userprofile .messagebox a[disabled],
+fieldset[disabled] .userprofile .messagebox a,
+.userprofile .messagebox a.disabled:hover,
+.userprofile .messagebox a[disabled]:hover,
+fieldset[disabled] .userprofile .messagebox a:hover,
+.userprofile .messagebox a.disabled:focus,
+.userprofile .messagebox a[disabled]:focus,
+fieldset[disabled] .userprofile .messagebox a:focus,
+.userprofile .messagebox a.disabled:active,
+.userprofile .messagebox a[disabled]:active,
+fieldset[disabled] .userprofile .messagebox a:active,
+.userprofile .messagebox a.disabled.active,
+.userprofile .messagebox a[disabled].active,
+fieldset[disabled] .userprofile .messagebox a.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.userprofile .messagebox a .badge {
+  color: #ffffff;
+  background-color: #333333;
 }
 .loginbox {
   border-radius: 3px;
@@ -13939,6 +13860,7 @@ ol {
   width: auto;
 }
 .block .content {
+  word-wrap: break-word;
   padding: 4px 14px;
 }
 .block .content hr {
@@ -14146,60 +14068,50 @@ textarea.searchform input[type="text"] {
   padding-top: 10px;
   padding-left: 0px;
 }
-.mform .fcontainer .fitem .fitemtitle,
-.mform fieldset .fitem .fitemtitle {
+.mform .fitem .fitemtitle {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .mform .fcontainer .fitem .fitemtitle,
-  .mform fieldset .fitem .fitemtitle {
+  .mform .fitem .fitemtitle {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 1200px) {
-  .mform .fcontainer .fitem .fitemtitle,
-  .mform fieldset .fitem .fitemtitle {
+  .mform .fitem .fitemtitle {
     float: left;
     width: 25%;
   }
 }
-.mform .fcontainer .fitem .fitemtitle label,
-.mform fieldset .fitem .fitemtitle label {
+.mform .fitem .fitemtitle label {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 7px;
 }
-.mform .fcontainer .fitem .felement,
-.mform fieldset .fitem .felement {
+.mform .fitem .felement {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .mform .fcontainer .fitem .felement,
-  .mform fieldset .fitem .felement {
+  .mform .fitem .felement {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 1200px) {
-  .mform .fcontainer .fitem .felement,
-  .mform fieldset .fitem .felement {
+  .mform .fitem .felement {
     float: left;
     width: 75%;
   }
 }
-.mform .fcontainer .fitem .felement select,
-.mform fieldset .fitem .felement select,
-.mform .fcontainer .fitem .felement input[type="text"],
-.mform fieldset .fitem .felement input[type="text"],
-.mform .fcontainer .fitem .felement input[type="password"],
-.mform fieldset .fitem .felement input[type="password"] {
+.mform .fitem .felement select,
+.mform .fitem .felement input[type="text"],
+.mform .fitem .felement input[type="password"] {
   display: block;
   width: 100%;
   height: 34px;
@@ -14217,115 +14129,84 @@ textarea.searchform input[type="text"] {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.mform .fcontainer .fitem .felement select:focus,
-.mform fieldset .fitem .felement select:focus,
-.mform .fcontainer .fitem .felement input[type="text"]:focus,
-.mform fieldset .fitem .felement input[type="text"]:focus,
-.mform .fcontainer .fitem .felement input[type="password"]:focus,
-.mform fieldset .fitem .felement input[type="password"]:focus {
+.mform .fitem .felement select:focus,
+.mform .fitem .felement input[type="text"]:focus,
+.mform .fitem .felement input[type="password"]:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.mform .fcontainer .fitem .felement select::-moz-placeholder,
-.mform fieldset .fitem .felement select::-moz-placeholder,
-.mform .fcontainer .fitem .felement input[type="text"]::-moz-placeholder,
-.mform fieldset .fitem .felement input[type="text"]::-moz-placeholder,
-.mform .fcontainer .fitem .felement input[type="password"]::-moz-placeholder,
-.mform fieldset .fitem .felement input[type="password"]::-moz-placeholder {
+.mform .fitem .felement select::-moz-placeholder,
+.mform .fitem .felement input[type="text"]::-moz-placeholder,
+.mform .fitem .felement input[type="password"]::-moz-placeholder {
   color: #777777;
   opacity: 1;
 }
-.mform .fcontainer .fitem .felement select:-ms-input-placeholder,
-.mform fieldset .fitem .felement select:-ms-input-placeholder,
-.mform .fcontainer .fitem .felement input[type="text"]:-ms-input-placeholder,
-.mform fieldset .fitem .felement input[type="text"]:-ms-input-placeholder,
-.mform .fcontainer .fitem .felement input[type="password"]:-ms-input-placeholder,
-.mform fieldset .fitem .felement input[type="password"]:-ms-input-placeholder {
+.mform .fitem .felement select:-ms-input-placeholder,
+.mform .fitem .felement input[type="text"]:-ms-input-placeholder,
+.mform .fitem .felement input[type="password"]:-ms-input-placeholder {
   color: #777777;
 }
-.mform .fcontainer .fitem .felement select::-webkit-input-placeholder,
-.mform fieldset .fitem .felement select::-webkit-input-placeholder,
-.mform .fcontainer .fitem .felement input[type="text"]::-webkit-input-placeholder,
-.mform fieldset .fitem .felement input[type="text"]::-webkit-input-placeholder,
-.mform .fcontainer .fitem .felement input[type="password"]::-webkit-input-placeholder,
-.mform fieldset .fitem .felement input[type="password"]::-webkit-input-placeholder {
+.mform .fitem .felement select::-webkit-input-placeholder,
+.mform .fitem .felement input[type="text"]::-webkit-input-placeholder,
+.mform .fitem .felement input[type="password"]::-webkit-input-placeholder {
   color: #777777;
 }
-.mform .fcontainer .fitem .felement select[disabled],
-.mform fieldset .fitem .felement select[disabled],
-.mform .fcontainer .fitem .felement input[type="text"][disabled],
-.mform fieldset .fitem .felement input[type="text"][disabled],
-.mform .fcontainer .fitem .felement input[type="password"][disabled],
-.mform fieldset .fitem .felement input[type="password"][disabled],
-.mform .fcontainer .fitem .felement select[readonly],
-.mform fieldset .fitem .felement select[readonly],
-.mform .fcontainer .fitem .felement input[type="text"][readonly],
-.mform fieldset .fitem .felement input[type="text"][readonly],
-.mform .fcontainer .fitem .felement input[type="password"][readonly],
-.mform fieldset .fitem .felement input[type="password"][readonly],
-fieldset[disabled] .mform .fcontainer .fitem .felement select,
-fieldset[disabled] .mform fieldset .fitem .felement select,
-fieldset[disabled] .mform .fcontainer .fitem .felement input[type="text"],
-fieldset[disabled] .mform fieldset .fitem .felement input[type="text"],
-fieldset[disabled] .mform .fcontainer .fitem .felement input[type="password"],
-fieldset[disabled] .mform fieldset .fitem .felement input[type="password"] {
+.mform .fitem .felement select[disabled],
+.mform .fitem .felement input[type="text"][disabled],
+.mform .fitem .felement input[type="password"][disabled],
+.mform .fitem .felement select[readonly],
+.mform .fitem .felement input[type="text"][readonly],
+.mform .fitem .felement input[type="password"][readonly],
+fieldset[disabled] .mform .fitem .felement select,
+fieldset[disabled] .mform .fitem .felement input[type="text"],
+fieldset[disabled] .mform .fitem .felement input[type="password"] {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textarea.mform .fcontainer .fitem .felement select,
-textarea.mform fieldset .fitem .felement select,
-textarea.mform .fcontainer .fitem .felement input[type="text"],
-textarea.mform fieldset .fitem .felement input[type="text"],
-textarea.mform .fcontainer .fitem .felement input[type="password"],
-textarea.mform fieldset .fitem .felement input[type="password"] {
+textarea.mform .fitem .felement select,
+textarea.mform .fitem .felement input[type="text"],
+textarea.mform .fitem .felement input[type="password"] {
   height: auto;
 }
-.mform .fcontainer .fitem select[multiple],
-.mform fieldset .fitem select[multiple],
-.mform .fcontainer .fitem select[size],
-.mform fieldset .fitem select[size] {
+.mform .fitem select[multiple],
+.mform .fitem select[size] {
   height: auto;
 }
-.mform .fcontainer .fitem .felement.fduration input[type="text"],
-.mform fieldset .fitem .felement.fduration input[type="text"] {
+.mform .fitem .felement.fduration input[type="text"] {
   min-width: 0;
   width: 5em;
   display: inline-block;
 }
-.mform .fcontainer .fitem .felement.fduration select,
-.mform fieldset .fitem .felement.fduration select,
-.mform .fcontainer .fitem .felement.fdate_selector select,
-.mform fieldset .fitem .felement.fdate_selector select,
-.mform .fcontainer .fitem .felement.fdate_time_selector select,
-.mform fieldset .fitem .felement.fdate_time_selector select {
+.mform .fitem .felement.fduration select,
+.mform .fitem .felement.fdate_selector select,
+.mform .fitem .felement.fdate_time_selector select,
+.mform .fitem .felement.fgroup select {
   width: auto;
   display: inline-block;
   min-width: 60px;
 }
-.mform .fcontainer .fitem .felement.fduration select[size],
-.mform fieldset .fitem .felement.fduration select[size],
-.mform .fcontainer .fitem .felement.fdate_selector select[size],
-.mform fieldset .fitem .felement.fdate_selector select[size],
-.mform .fcontainer .fitem .felement.fdate_time_selector select[size],
-.mform fieldset .fitem .felement.fdate_time_selector select[size],
-.mform .fcontainer .fitem .felement.fduration select[multiple],
-.mform fieldset .fitem .felement.fduration select[multiple],
-.mform .fcontainer .fitem .felement.fdate_selector select[multiple],
-.mform fieldset .fitem .felement.fdate_selector select[multiple],
-.mform .fcontainer .fitem .felement.fdate_time_selector select[multiple],
-.mform fieldset .fitem .felement.fdate_time_selector select[multiple] {
+.mform .fitem .felement.fduration select[size],
+.mform .fitem .felement.fdate_selector select[size],
+.mform .fitem .felement.fdate_time_selector select[size],
+.mform .fitem .felement.fgroup select[size],
+.mform .fitem .felement.fduration select[multiple],
+.mform .fitem .felement.fdate_selector select[multiple],
+.mform .fitem .felement.fdate_time_selector select[multiple],
+.mform .fitem .felement.fgroup select[multiple] {
   height: auto;
 }
-.mform .fcontainer .fitem .felement.fduration label,
-.mform fieldset .fitem .felement.fduration label,
-.mform .fcontainer .fitem .felement.fdate_selector label,
-.mform fieldset .fitem .felement.fdate_selector label,
-.mform .fcontainer .fitem .felement.fdate_time_selector label,
-.mform fieldset .fitem .felement.fdate_time_selector label {
+.mform .fitem .felement.fduration label,
+.mform .fitem .felement.fdate_selector label,
+.mform .fitem .felement.fdate_time_selector label,
+.mform .fitem .felement.fgroup label {
   display: inline-block;
+}
+.mform .fitem .felement.fgroup input[type="text"] {
+  min-width: unset;
+  display: inline;
 }
 .mform .fitem_actionbuttons {
   margin-bottom: 15px;
@@ -14668,9 +14549,7 @@ textareaselect.singleselect {
   .form-item .form-setting > input[type="text"],
   .mform .fcontainer .fitem .felement > input[type="text"],
   .form-item .form-setting > input[type="password"],
-  .mform .fcontainer .fitem .felement > input[type="password"],
-  .form-item .form-setting > select,
-  .mform .fcontainer .fitem .felement > select {
+  .mform .fcontainer .fitem .felement > input[type="password"] {
     width: auto;
     min-width: 480px;
     margin-bottom: 5px;
@@ -14968,6 +14847,9 @@ fieldset[disabled] #page-mod-forum-discuss .discussioncontrols .discussioncontro
 }
 textarea#page-mod-forum-discuss .discussioncontrols .discussioncontrol.movediscussion select.urlselect {
   height: auto;
+}
+#page-mod-forum-discuss .discussioncontrols .discussioncontrol.movediscussion input[type="submit"] {
+  float: left;
 }
 #page-mod-forum-discuss .discussioncontrols .discussioncontrol.movediscussion.movediscussion {
   float: left;
@@ -15972,6 +15854,9 @@ td.submit input .badge {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 #notice .singlebutton + .singlebutton input:focus,
 .submit.buttons input[name="cancel"]:focus,
@@ -16011,6 +15896,66 @@ fieldset[disabled] .submit.buttons input[name="cancel"] {
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+#notice .singlebutton + .singlebutton input:hover,
+.submit.buttons input[name="cancel"]:hover,
+#notice .singlebutton + .singlebutton input:focus,
+.submit.buttons input[name="cancel"]:focus,
+#notice .singlebutton + .singlebutton input:active,
+.submit.buttons input[name="cancel"]:active,
+#notice .singlebutton + .singlebutton input.active,
+.submit.buttons input[name="cancel"].active,
+.open > .dropdown-toggle#notice .singlebutton + .singlebutton input,
+.open > .dropdown-toggle.submit.buttons input[name="cancel"] {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+#notice .singlebutton + .singlebutton input:active,
+.submit.buttons input[name="cancel"]:active,
+#notice .singlebutton + .singlebutton input.active,
+.submit.buttons input[name="cancel"].active,
+.open > .dropdown-toggle#notice .singlebutton + .singlebutton input,
+.open > .dropdown-toggle.submit.buttons input[name="cancel"] {
+  background-image: none;
+}
+#notice .singlebutton + .singlebutton input.disabled,
+.submit.buttons input[name="cancel"].disabled,
+#notice .singlebutton + .singlebutton input[disabled],
+.submit.buttons input[name="cancel"][disabled],
+fieldset[disabled] #notice .singlebutton + .singlebutton input,
+fieldset[disabled] .submit.buttons input[name="cancel"],
+#notice .singlebutton + .singlebutton input.disabled:hover,
+.submit.buttons input[name="cancel"].disabled:hover,
+#notice .singlebutton + .singlebutton input[disabled]:hover,
+.submit.buttons input[name="cancel"][disabled]:hover,
+fieldset[disabled] #notice .singlebutton + .singlebutton input:hover,
+fieldset[disabled] .submit.buttons input[name="cancel"]:hover,
+#notice .singlebutton + .singlebutton input.disabled:focus,
+.submit.buttons input[name="cancel"].disabled:focus,
+#notice .singlebutton + .singlebutton input[disabled]:focus,
+.submit.buttons input[name="cancel"][disabled]:focus,
+fieldset[disabled] #notice .singlebutton + .singlebutton input:focus,
+fieldset[disabled] .submit.buttons input[name="cancel"]:focus,
+#notice .singlebutton + .singlebutton input.disabled:active,
+.submit.buttons input[name="cancel"].disabled:active,
+#notice .singlebutton + .singlebutton input[disabled]:active,
+.submit.buttons input[name="cancel"][disabled]:active,
+fieldset[disabled] #notice .singlebutton + .singlebutton input:active,
+fieldset[disabled] .submit.buttons input[name="cancel"]:active,
+#notice .singlebutton + .singlebutton input.disabled.active,
+.submit.buttons input[name="cancel"].disabled.active,
+#notice .singlebutton + .singlebutton input[disabled].active,
+.submit.buttons input[name="cancel"][disabled].active,
+fieldset[disabled] #notice .singlebutton + .singlebutton input.active,
+fieldset[disabled] .submit.buttons input[name="cancel"].active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+#notice .singlebutton + .singlebutton input .badge,
+.submit.buttons input[name="cancel"] .badge {
+  color: #ffffff;
+  background-color: #333333;
 }
 #notice .singlebutton + .singlebutton input,
 .submit.buttons input[name="cancel"] {
@@ -16587,9 +16532,6 @@ input.fp-btn-choose {
   body.zoomin #page-header h1,
   body.zoomin #page-footer {
     display: none;
-  }
-  body.zoomin .breadcrumb-nav {
-    margin-top: 4px;
   }
 }
 .nonsense {
