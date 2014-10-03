@@ -17761,38 +17761,12 @@ form#authmenu table tr td:first-child {
   padding-bottom: 2px;
   padding-top: 2px;
 }
-@media (max-width: 768px) {
-  #page-mod-quiz-edit div.quizcontents {
-    float: none;
-    width: 100%;
-  }
-  #page-mod-quiz-edit #block-region-side-pre,
-  #page-mod-quiz-edit #block-region-side-post {
-    clear: both;
-  }
-  #page-mod-quiz-edit div.question div.content div.points {
-    position: static;
-    float: right;
-  }
-  #page-mod-quiz-edit div.question div.content div.questioncontrols {
-    position: static;
-  }
-}
-@media (max-width: 768px) {
-  #page-mod-quiz-edit .questionbankwindow.block {
-    float: none;
-    width: 100%;
-  }
-}
 #page-mod-quiz-edit .questionbankwindow.block div.header {
   background-color: #822433;
   border-radius: 0;
 }
 #page-mod-quiz-edit .questionbankwindow.block table#categoryquestions th a {
   color: #FFFFFF;
-}
-#page-mod-quiz-edit .questionbankwindow.block table#categoryquestions input[type="checkbox"] {
-  position: static;
 }
 .path-mod-scheduler table.schedulercommands th {
   background-color: inherit;
