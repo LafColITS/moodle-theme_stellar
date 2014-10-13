@@ -73,7 +73,6 @@ if (!empty($PAGE->theme->settings->logo)) {
 </nav>
 <header class="moodleheader">
     <div class="container-fluid">
-    <?php // echo $OUTPUT->page_heading(); ?>
     </div>
 </header>
 
