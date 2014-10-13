@@ -9,6 +9,7 @@ var gulp    = require('gulp'),
     jshint  = require('gulp-jshint'),
     phplint = require('phplint'),
     replace = require('gulp-replace'),
+    phpcs   = require('gulp-phpcs'),
     less    = require('gulp-less');
 
 // Parses the package.json file. We use this because its values
@@ -20,6 +21,15 @@ var getPackageJSON = function() {
 // PHP lint theme files.
 gulp.task('phplint', function() {
   return phplint(['*.php', './layout/**/*.php', './lang/**/*.php']);
+});
+
+// Moodle coding standards.
+gulp.task('standards', function() {
+  return gulp.src(['*.php', './layout/**/*.php', './lang/**/*.php'])
+    .pipe(phpcs({
+      standard: 'moodle'
+    }))
+    .pipe(phpcs.reporter('log'));
 });
 
 // Compile CSS from LESS files.
