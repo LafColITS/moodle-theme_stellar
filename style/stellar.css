@@ -17532,10 +17532,6 @@ div#region-main {
   padding-top: 14px;
   padding-bottom: 1px;
 }
-div#region-main ul:not(.topics):not(.weeks):not(.section),
-div#region-main ol {
-  margin-left: 30px;
-}
 div#region-main .course-content ul.topics li.section .left,
 div#region-main .course-content ul.weeks li.section .left {
   width: 0;
