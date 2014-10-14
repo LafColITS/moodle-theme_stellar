@@ -17951,3 +17951,22 @@ form#authmenu table tr td:first-child {
     right: 75%;
   }
 }
+.box.feedback_items {
+  background-color: #FFFFFF;
+  border-color: #eeeeee;
+  border-style: solid;
+  border-width: 2px;
+  padding: 4px;
+  margin-bottom: 6px;
+}
+.box.feedback_items > .box.feedback_item_box_left {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #eeeeee;
+  color: inherit;
+}
+.box.feedback_items .feedback_item_number_left,
+.box.feedback_items .feedback_item_label_left {
+  font-weight: bold;
+  padding-right: 4px;
+}
