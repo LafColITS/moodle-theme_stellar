@@ -17620,6 +17620,13 @@ a.assignrolelink {
 a.btn {
   text-decoration: none;
 }
+.path-admin .buttons {
+  margin-left: 0;
+  width: 100%;
+}
+.path-admin .buttons .singlebutton {
+  float: left;
+}
 .path-grade-report-grader #fixed_column {
   margin-top: 4px;
 }
