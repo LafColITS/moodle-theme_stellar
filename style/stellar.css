@@ -17970,3 +17970,6 @@ form#authmenu table tr td:first-child {
   font-weight: bold;
   padding-right: 4px;
 }
+.box.feedback_items .box.feedback_item_number_left:after {
+  content: ")";
+}
