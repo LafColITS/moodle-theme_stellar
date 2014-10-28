@@ -17532,6 +17532,11 @@ div#region-main {
   padding-top: 14px;
   padding-bottom: 1px;
 }
+div#region-main .course-content ul.topics li.section .content,
+div#region-main .course-content ul.weeks li.section .content {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 div#region-main .course-content ul.topics li.section .left,
 div#region-main .course-content ul.weeks li.section .left {
   width: 0;
