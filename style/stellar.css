@@ -17651,6 +17651,11 @@ a.btn {
   font-weight: bold;
   text-decoration: none;
 }
+#page-grade-grading-manage .actions .action {
+  width: 160px;
+  white-space: normal;
+  background-color: #FFFFFF;
+}
 .subfield.subfield_email,
 th.userfield.useremail[scope="row"] {
   text-transform: lowercase;
