@@ -17640,7 +17640,7 @@ a.navbar-brand h1 {
   border-width: 0 0 1px 0;
 }
 #moodle-navbar {
-  margin-right: -15px;
+  border-color: #822433;
 }
 .nav > li:last-child > a {
   padding-right: 0;
@@ -17936,9 +17936,6 @@ nav.breadcrumb-nav ol.breadcrumb {
 nav.breadcrumb-nav ol.breadcrumb a:link,
 nav.breadcrumb-nav ol.breadcrumb a:visited {
   color: #FFFFFF;
-}
-#moodle-navbar {
-  border-color: #822433;
 }
 @media (max-width: 768px) {
   h3.sectionname {
