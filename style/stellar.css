@@ -12065,6 +12065,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
 }
 .box.message .messagearea .messagehistory .messagehistorytype > li > a {
   background-color: #FFFFFF;
+  border-color: #eeeeee;
 }
 .box.message .messagearea .messagehistory .messagehistorytype > li.active > a,
 .box.message .messagearea .messagehistory .messagehistorytype > li.active > a:hover {
@@ -18014,6 +18015,7 @@ a.btn {
 .box.message .messagearea .messagehistory .messagehistorytype span.visible,
 .box.message .messagearea .messagehistory .messagehistorytype a.visible {
   background-color: #FFFFFF;
+  border-color: #eeeeee;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
