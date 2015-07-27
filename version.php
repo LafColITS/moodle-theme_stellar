@@ -30,5 +30,5 @@ $plugin->maturity  = MATURITY_BETA;
 $plugin->release   = 'v0.2.6';
 
 $plugin->dependencies = array(
-    'theme_bootstrap' => 2014120803
+    'theme_bootstrap' => 2015043000
 );
