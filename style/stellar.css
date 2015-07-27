@@ -17676,9 +17676,6 @@ img.sitelogo {
 .nav > li:last-child > a {
   padding-right: 0;
 }
-.navbar-right {
-  margin-right: 0;
-}
 .block_rss_client .list li:first-child {
   border-top-width: 0;
 }
