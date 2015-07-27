@@ -17673,6 +17673,9 @@ a.navbar-brand h1 {
 .nav > li:last-child > a {
   padding-right: 0;
 }
+.navbar-right {
+  margin-right: 0;
+}
 .block_rss_client .list li:first-child {
   border-top-width: 0;
 }
@@ -17684,201 +17687,6 @@ a.navbar-brand h1 {
 }
 .block_filtered_course_list .course-section {
   padding-left: 0;
-}
-a.moodlezoom .zoomin {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-a.moodlezoom .zoomin:focus,
-a.moodlezoom .zoomin:active:focus,
-a.moodlezoom .zoomin.active:focus,
-a.moodlezoom .zoomin.focus,
-a.moodlezoom .zoomin:active.focus,
-a.moodlezoom .zoomin.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-a.moodlezoom .zoomin:hover,
-a.moodlezoom .zoomin:focus,
-a.moodlezoom .zoomin.focus {
-  color: #333333;
-  text-decoration: none;
-}
-a.moodlezoom .zoomin:active,
-a.moodlezoom .zoomin.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-a.moodlezoom .zoomin.disabled,
-a.moodlezoom .zoomin[disabled],
-fieldset[disabled] a.moodlezoom .zoomin {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-a.moodlezoom .zoomin:hover,
-a.moodlezoom .zoomin:focus,
-a.moodlezoom .zoomin.focus,
-a.moodlezoom .zoomin:active,
-a.moodlezoom .zoomin.active,
-.open > .dropdown-togglea.moodlezoom .zoomin {
-  color: #333333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-a.moodlezoom .zoomin:active,
-a.moodlezoom .zoomin.active,
-.open > .dropdown-togglea.moodlezoom .zoomin {
-  background-image: none;
-}
-a.moodlezoom .zoomin.disabled,
-a.moodlezoom .zoomin[disabled],
-fieldset[disabled] a.moodlezoom .zoomin,
-a.moodlezoom .zoomin.disabled:hover,
-a.moodlezoom .zoomin[disabled]:hover,
-fieldset[disabled] a.moodlezoom .zoomin:hover,
-a.moodlezoom .zoomin.disabled:focus,
-a.moodlezoom .zoomin[disabled]:focus,
-fieldset[disabled] a.moodlezoom .zoomin:focus,
-a.moodlezoom .zoomin.disabled.focus,
-a.moodlezoom .zoomin[disabled].focus,
-fieldset[disabled] a.moodlezoom .zoomin.focus,
-a.moodlezoom .zoomin.disabled:active,
-a.moodlezoom .zoomin[disabled]:active,
-fieldset[disabled] a.moodlezoom .zoomin:active,
-a.moodlezoom .zoomin.disabled.active,
-a.moodlezoom .zoomin[disabled].active,
-fieldset[disabled] a.moodlezoom .zoomin.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-a.moodlezoom .zoomin .badge {
-  color: #ffffff;
-  background-color: #333333;
-}
-body.zoomin .moodlezoom span.zoomout {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-body.zoomin .moodlezoom span.zoomout:focus,
-body.zoomin .moodlezoom span.zoomout:active:focus,
-body.zoomin .moodlezoom span.zoomout.active:focus,
-body.zoomin .moodlezoom span.zoomout.focus,
-body.zoomin .moodlezoom span.zoomout:active.focus,
-body.zoomin .moodlezoom span.zoomout.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-body.zoomin .moodlezoom span.zoomout:hover,
-body.zoomin .moodlezoom span.zoomout:focus,
-body.zoomin .moodlezoom span.zoomout.focus {
-  color: #333333;
-  text-decoration: none;
-}
-body.zoomin .moodlezoom span.zoomout:active,
-body.zoomin .moodlezoom span.zoomout.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-body.zoomin .moodlezoom span.zoomout.disabled,
-body.zoomin .moodlezoom span.zoomout[disabled],
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-body.zoomin .moodlezoom span.zoomout:hover,
-body.zoomin .moodlezoom span.zoomout:focus,
-body.zoomin .moodlezoom span.zoomout.focus,
-body.zoomin .moodlezoom span.zoomout:active,
-body.zoomin .moodlezoom span.zoomout.active,
-.open > .dropdown-togglebody.zoomin .moodlezoom span.zoomout {
-  color: #333333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-body.zoomin .moodlezoom span.zoomout:active,
-body.zoomin .moodlezoom span.zoomout.active,
-.open > .dropdown-togglebody.zoomin .moodlezoom span.zoomout {
-  background-image: none;
-}
-body.zoomin .moodlezoom span.zoomout.disabled,
-body.zoomin .moodlezoom span.zoomout[disabled],
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout,
-body.zoomin .moodlezoom span.zoomout.disabled:hover,
-body.zoomin .moodlezoom span.zoomout[disabled]:hover,
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout:hover,
-body.zoomin .moodlezoom span.zoomout.disabled:focus,
-body.zoomin .moodlezoom span.zoomout[disabled]:focus,
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout:focus,
-body.zoomin .moodlezoom span.zoomout.disabled.focus,
-body.zoomin .moodlezoom span.zoomout[disabled].focus,
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout.focus,
-body.zoomin .moodlezoom span.zoomout.disabled:active,
-body.zoomin .moodlezoom span.zoomout[disabled]:active,
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout:active,
-body.zoomin .moodlezoom span.zoomout.disabled.active,
-body.zoomin .moodlezoom span.zoomout[disabled].active,
-fieldset[disabled] body.zoomin .moodlezoom span.zoomout.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-body.zoomin .moodlezoom span.zoomout .badge {
-  color: #ffffff;
-  background-color: #333333;
-}
-.breadcrumb-button > .singlebutton {
-  float: left !important;
 }
 .stellar-card {
   background-color: #FFFFFF;
@@ -17920,6 +17728,9 @@ body.zoomin .moodlezoom span.zoomout .badge {
 form#coursesearchnavbar {
   float: left;
   padding-left: 15px;
+}
+.breadcrumb-button > .singlebutton {
+  float: left !important;
 }
 .course_category_tree .category > .info {
   background-color: inherit;

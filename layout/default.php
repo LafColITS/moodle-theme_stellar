@@ -23,10 +23,6 @@ $knownregionpost = $PAGE->blocks->is_known_region('side-post');
 
 $regions = theme_stellar_bootstrap_grid($hassidepre, $hassidepost);
 $PAGE->set_popup_notification_allowed(false);
-if ($knownregionpre || $knownregionpost) {
-    theme_bootstrap_initialise_zoom($PAGE);
-}
-$setzoom = theme_bootstrap_get_zoom();
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -37,7 +33,7 @@ echo $OUTPUT->doctype() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 </head>
 
-<body <?php echo $OUTPUT->body_attributes($setzoom); ?>>
+<body <?php echo $OUTPUT->body_attributes(); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
@@ -89,7 +85,6 @@ if ($knownregionpre || $knownregionpost) {
                     <a href="#blockregion" class="btn btn-default"><?php echo get_string('skiptoblocks', 'theme_stellar'); ?></a>
                 </div>
 <?php
-    echo $OUTPUT->content_zoom();
 }
 ?>
             </div>
@@ -104,6 +99,7 @@ if ($knownregionpre || $knownregionpost) {
         <div id="region-main" class="<?php echo $regions['content']; ?>">
             <?php
             echo $OUTPUT->course_content_header();
+
             echo $OUTPUT->main_content();
             echo $OUTPUT->course_content_footer();
             ?>

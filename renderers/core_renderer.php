@@ -24,11 +24,4 @@ defined('MOODLE_INTERNAL') || die();
 
 class theme_stellar_core_renderer extends theme_bootstrap_core_renderer {
     // Strip out unwanted classes
-    public function content_zoom() {
-        $zoomin = html_writer::span(get_string('fullscreen', 'theme_bootstrap'), 'zoomin');
-        $zoomout = html_writer::span(get_string('closefullscreen', 'theme_bootstrap'), 'zoomout');
-        $content = html_writer::link('#',  $zoomin . $zoomout,
-            array('class' => 'pull-right moodlezoom'));
-        return $content;
-    }
 }
