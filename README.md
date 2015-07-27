@@ -24,5 +24,7 @@ Stellar is a fully responsive Bootstrap 3 theme. Added features include:
 
 Modify this theme
 =================
-This theme contains all the less files necessary to recompile the CSS. This theme was developed using the gulp task runner: http://gulpjs.com/. Please see `gulpfile.js` for associated tasks. To recompile the CSS, make the changes in the associated less files and then run `gulp styles`.
+Recompiling this theme's less files requires the Bootstrap 3 theme's source files. Run `composer install` to import these.
+
+This theme was developed using the gulp task runner: http://gulpjs.com/. Please see `gulpfile.js` for associated tasks. To recompile the CSS, make the changes in the associated less files and then run `gulp styles`.
 
