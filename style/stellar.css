@@ -17847,11 +17847,10 @@ a.btn {
 .path-admin .buttons .singlebutton {
   float: left;
 }
-.path-grade-report-grader #fixed_column {
-  margin-top: 4px;
-}
+.path-grade-report-grader #fixed_column,
 .path-grade-report-grader #user-grades {
   margin-top: 20px;
+  padding-top: 0;
 }
 .nav-tabs > li > a,
 .box.message .messagearea .messagehistory .messagehistorytype span.visible,
