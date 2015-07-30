@@ -17733,6 +17733,9 @@ form#coursesearchnavbar {
 .breadcrumb-button > .singlebutton {
   float: left !important;
 }
+.course_category_tree {
+  margin-top: 5px;
+}
 .course_category_tree .category > .info {
   background-color: inherit;
   border: none;
