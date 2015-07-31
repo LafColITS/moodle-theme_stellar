@@ -27,10 +27,7 @@ $THEME->parents = array('bootstrap');
 
 $THEME->doctype = 'html5';
 $THEME->sheets = array('stellar', 'custom');
-$THEME->lessfile = 'stellar';
 $THEME->parents_exclude_sheets = array('bootstrap' => array('moodle'));
-$THEME->lessvariablescallback = 'theme_stellar_less_variables';
-$THEME->extralesscallback = 'theme_stellar_extra_less';
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
 $THEME->enable_dock = true;
