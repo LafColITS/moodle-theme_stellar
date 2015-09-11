@@ -22,12 +22,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014090200;
+$plugin->version   = 2015091100;
 $plugin->requires  = 2014111000;
 $plugin->cron      = 0;
 $plugin->component = 'theme_stellar';
 $plugin->maturity  = MATURITY_BETA;
-$plugin->release   = 'v0.3.0';
+$plugin->release   = 'v0.3.1';
 
 $plugin->dependencies = array(
     'theme_bootstrap' => 2015043000
