@@ -17721,6 +17721,10 @@ div#region-main {
   padding-top: 14px;
   padding-bottom: 1px;
 }
+div#region-main .course-content ul.topics h3.sectionname,
+div#region-main .course-content ul.weeks h3.sectionname {
+  white-space: normal;
+}
 div#region-main .course-content ul.topics li.section .content,
 div#region-main .course-content ul.weeks li.section .content {
   margin-left: 40px;
