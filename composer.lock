@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LafColITS/theme_bootstrap.git",
-                "reference": "36de8b3ef5df92671abe414e30e1a035a0530857"
+                "reference": "f5b0235756b08c72421548003cabfd6357a43468"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LafColITS/theme_bootstrap/zipball/36de8b3ef5df92671abe414e30e1a035a0530857",
-                "reference": "36de8b3ef5df92671abe414e30e1a035a0530857",
+                "url": "https://api.github.com/repos/LafColITS/theme_bootstrap/zipball/f5b0235756b08c72421548003cabfd6357a43468",
+                "reference": "f5b0235756b08c72421548003cabfd6357a43468",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
             "support": {
                 "source": "https://github.com/LafColITS/theme_bootstrap/tree/MOODLE_28_STABLE"
             },
-            "time": "2015-07-26 23:57:27"
+            "time": "2015-09-11 15:55:09"
         },
         {
             "name": "composer/installers",
