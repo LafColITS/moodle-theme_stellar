@@ -1,4 +1,6 @@
 {
+    "name": "lafayette/theme_stellar",
+    "type": "moodle-theme",
     "repositories": [
         {
             "type": "vcs",
@@ -6,6 +8,12 @@
         }
     ],
     "require": {
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
         "bmbrands/theme_bootstrap": "dev-MOODLE_28_STABLE"
+    },
+    "extra": {
+        "installer-name": "stellar"
     }
 }
