@@ -4,14 +4,14 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:LafColITS/theme_bootstrap.git"
+            "url": "git@github.com:bmbrands/theme_bootstrap.git"
         }
     ],
     "require": {
         "composer/installers": "~1.0"
     },
     "require-dev": {
-        "bmbrands/theme_bootstrap": "dev-MOODLE_28_STABLE"
+        "bmbrands/theme_bootstrap": "dev-MOODLE_31_BETA"
     },
     "extra": {
         "installer-name": "stellar"

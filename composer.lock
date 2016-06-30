@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "30d6a76c4ea268274ef80a1ac46d31a8",
-    "content-hash": "c16a249cdd5a055f3541e84457b5d2aa",
+    "hash": "52d3529c887352058ea58612f93ca6df",
+    "content-hash": "35ea9b118ef883385bc5d1c6e067d60d",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.22",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -40,8 +40,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -56,12 +56,14 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -103,22 +105,22 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-04-13 19:46:30"
         }
     ],
     "packages-dev": [
         {
             "name": "bmbrands/theme_bootstrap",
-            "version": "dev-MOODLE_28_STABLE",
+            "version": "dev-MOODLE_31_BETA",
             "source": {
                 "type": "git",
-                "url": "https://github.com/LafColITS/theme_bootstrap.git",
-                "reference": "f5b0235756b08c72421548003cabfd6357a43468"
+                "url": "https://github.com/bmbrands/theme_bootstrap.git",
+                "reference": "c4bdb9a37e3948df531d23db9d2a890388c3d451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LafColITS/theme_bootstrap/zipball/f5b0235756b08c72421548003cabfd6357a43468",
-                "reference": "f5b0235756b08c72421548003cabfd6357a43468",
+                "url": "https://api.github.com/repos/bmbrands/theme_bootstrap/zipball/c4bdb9a37e3948df531d23db9d2a890388c3d451",
+                "reference": "c4bdb9a37e3948df531d23db9d2a890388c3d451",
                 "shasum": ""
             },
             "require": {
@@ -129,9 +131,10 @@
                 "installer-name": "bootstrap"
             },
             "support": {
-                "source": "https://github.com/LafColITS/theme_bootstrap/tree/MOODLE_28_STABLE"
+                "source": "https://github.com/bmbrands/theme_bootstrap/tree/MOODLE_31_BETA",
+                "issues": "https://github.com/bmbrands/theme_bootstrap/issues"
             },
-            "time": "2015-09-11 15:55:09"
+            "time": "2016-06-21 07:16:33"
         }
     ],
     "aliases": [],
