@@ -39,28 +39,15 @@ echo $OUTPUT->doctype() ?>
 
 <nav role="navigation" class="navbar navbar-inverse">
     <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#moodle-navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="<?php echo $CFG->wwwroot;?>"><?php
-if (!empty($PAGE->theme->settings->logo)) {
-    ?>
-            <img class="sitelogo" src="<?php echo $PAGE->theme->settings->logo;?>" alt="Custom logo here" />
-    <?php
-} else {
-    echo '<h1>'.$SITE->shortname.'</h1>';
-}
-?>
-        </a>
+    <div class="navbar-header pull-left">
+        <?php echo $OUTPUT->navbar_brand(); ?>
     </div>
-
-    <div id="moodle-navbar" class="navbar-collapse collapse">
-        <?php echo $OUTPUT->custom_menu(); ?>
+    <div class="navbar-header pull-right">
         <?php echo $OUTPUT->user_menu(); ?>
+        <?php echo $OUTPUT->navbar_button(); ?>
+    </div>
+    <div id="moodle-navbar" class="navbar-collapse collapse navbar-left">
+        <?php echo $OUTPUT->custom_menu(); ?>
         <ul class="nav pull-right">
             <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
         </ul>

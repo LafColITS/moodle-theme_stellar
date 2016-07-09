@@ -20138,7 +20138,7 @@ img.sitelogo {
   height: 45px;
 }
 .navbar-brand {
-  padding: 0 16px 15px 15px;
+  padding: 0 15px;
   text-decoration: none;
 }
 .navbar-brand h1 {
@@ -20309,6 +20309,12 @@ a {
 }
 a.assignrolelink {
   text-decoration: none;
+}
+.usermenu a {
+  color: white;
+}
+.usermenu .usertext {
+  text-decoration: underline;
 }
 #dockeditempanel .dockeditempanel_content {
   border-color: #822433;

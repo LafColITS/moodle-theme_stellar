@@ -23,5 +23,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 class theme_stellar_core_renderer extends theme_bootstrap_core_renderer {
-    // Strip out unwanted classes
+    /** 
+     * This code renders the navbar brand link displayed in the left navbar
+     * on smaller screens.
+     *
+     * @return string HTML fragment
+     */
+    protected function navbar_brand() {
+        global $CFG, $PAGE, $SITE;
+        if (!empty($PAGE->theme->settings->logo)) {
+            $html = '<img class="sitelogo" src="' . $PAGE->theme->settings->logo . '" alt="Custom logo here" />';
+        } else {
+            $html = '<h1>'.$SITE->shortname.'</h1>';
+        } 
+        return html_writer::link($CFG->wwwroot, $html, array('class' => 'navbar-brand'));
+    } 
 }
