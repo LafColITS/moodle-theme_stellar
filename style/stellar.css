@@ -20111,6 +20111,7 @@ div.feedback_item_commands_left {
 }
 #site-news-forum > h2 {
   border-bottom: 1px solid black;
+  margin-top: 0;
 }
 .forumpost .row .left {
   width: 43px;
