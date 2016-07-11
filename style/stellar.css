@@ -20189,8 +20189,12 @@ img.sitelogo {
   margin-bottom: 6px;
 }
 .breadcrumb {
-  background-color: #FFFFFF;
+  background-color: inherit;
+  color: white;
   padding: 8px 16px;
+}
+.breadcrumb a {
+  color: white;
 }
 .breadcrumb-button {
   margin-right: 15px;
