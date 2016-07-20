@@ -18694,6 +18694,54 @@ a.btn {
   white-space: normal;
   background-color: #FFFFFF;
 }
+.path-grade-report .nav.nav-tabs {
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+.path-grade-report .nav.nav-tabs > li {
+  float: none;
+}
+.path-grade-report .nav.nav-tabs > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.path-grade-report .nav.nav-tabs > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .path-grade-report .nav.nav-tabs > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .path-grade-report .nav.nav-tabs > li > a {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .path-grade-report .nav.nav-tabs > li {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  .path-grade-report .nav.nav-tabs > li > a {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .path-grade-report .nav.nav-tabs {
+    border: 0;
+    border-radius: 0;
+  }
+  .path-grade-report .nav.nav-tabs > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .path-grade-report .nav.nav-tabs > li > a {
+    margin-bottom: 0;
+  }
+}
 .subfield.subfield_email,
 th.userfield.useremail[scope="row"] {
   text-transform: lowercase;
