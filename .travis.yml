@@ -15,6 +15,7 @@ php:
 env:
  global:
   - MOODLE_BRANCH=MOODLE_31_STABLE
+  - IGNORE_NAMES=package.json,gulpfile.js
  matrix:
   - DB=pgsql
   - DB=mysqli
