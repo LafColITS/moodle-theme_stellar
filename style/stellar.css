@@ -10512,6 +10512,15 @@ span.editinstructions {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+#coursesearch {
+  text-align: left;
+}
+#coursesearch label.hidden {
+  display: none;
+}
+.searchhelp {
+  text-align: left;
+}
 /**
  * Display sizes:
  * Large displays                   1200        +
@@ -13271,6 +13280,10 @@ body.path-question-type .mform fieldset.hidden {
     width: 50%;
   }
 }
+.notloggedin .usermenu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .jsenabled .usermenu .moodle-actionmenu .usertext {
   display: inline-block;
   vertical-align: middle;
@@ -14564,6 +14577,9 @@ textarea.mform .fitem .felement textarea {
 .mform .fitem select[size] {
   height: auto;
 }
+.mform .fitem .felement.fautocomplete input[type="text"] {
+  display: inline-block;
+}
 .mform .fitem .felement.fduration input[type="text"] {
   min-width: 0;
   width: 5em;
@@ -15173,6 +15189,58 @@ input[type="checkbox"] {
   margin-left: 1em;
   margin-right: 1em;
   margin-top: 4px;
+}
+/* Custom styles for autocomplete form element */
+.form-autocomplete-selection {
+  margin: 0.2em;
+  min-height: 21px;
+}
+.form-autocomplete-selection .label-info {
+  display: inline-block;
+}
+.form-autocomplete-multiple [role=listitem] {
+  cursor: pointer;
+}
+.form-autocomplete-suggestions {
+  position: absolute;
+  background-color: white;
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+  min-width: 206px;
+  max-height: 20.4em;
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1;
+}
+.form-autocomplete-suggestions li {
+  list-style-type: none;
+  padding: 0.2em;
+  margin: 0;
+  cursor: pointer;
+  color: #333333;
+}
+.form-autocomplete-suggestions li:hover {
+  background-color: #be354b;
+  color: #ffffff;
+}
+.form-autocomplete-suggestions li[aria-selected=true] {
+  background-color: #f2f2f2;
+  color: #555555;
+}
+.form-autocomplete-downarrow {
+  color: #333333;
+  position: relative;
+  left: -1.5em;
+  cursor: pointer;
+}
+.form-autocomplete-downarrow.dir-rtl {
+  right: -1.5em;
+  left: inherit;
+}
+.form-autocomplete-selection [data-active-selection=true] {
+  padding: 0.5em;
+  font-size: large;
 }
 /* modules.less */
 select {
@@ -16863,8 +16931,8 @@ input.fp-btn-choose {
   padding: 3px;
   margin: 3px;
 }
-.userenrolment .col_role .addrole > *:hover,
-.userenrolment .col_group .addgroup > *:hover {
+.userenrolment .col_role .addrole > a:hover,
+.userenrolment .col_group .addgroup > a:hover {
   border-bottom: 1px solid #666;
 }
 .userenrolment .col_role .addrole img,
@@ -18478,18 +18546,16 @@ div.feedback_item_commands_left {
 .forumpost {
   border-radius: 0;
 }
-img.sitelogo {
-  height: 45px;
-}
 .navbar-brand {
   padding: 0 15px;
   text-decoration: none;
 }
 .navbar-brand h1 {
-  margin-top: 5px;
+  margin-top: 2.5px;
 }
-.navbar-header {
-  margin-top: 5px;
+.navbar-brand .sitelogo {
+  height: 45px;
+  margin-top: 2.5px;
 }
 .navbar-inverse {
   border-color: #FFFFFF;
@@ -18506,6 +18572,9 @@ img.sitelogo {
   background-color: #f1f2f2;
   margin-left: -15px;
   margin-right: -15px;
+}
+.jsenabled .usermenu .moodle-actionmenu.show {
+  background-color: #6e1e2b;
 }
 .unlist {
   margin: 0 0 10px 0;
@@ -18536,6 +18605,7 @@ ul[role=tree] {
 .course-content ul.topics li.section,
 .course-content ul.weeks li.section,
 .forumheaderlist,
+.userprofile,
 .content > .subcategories {
   background-color: #FFFFFF;
   border-color: #eeeeee;
@@ -18593,7 +18663,11 @@ form#coursesearchnavbar {
 #region-main .course_category_tree .panel-default > .panel-heading .coursename a {
   color: #006699;
 }
-#region-main .content {
+#region-main .course-search-result .panel-default > .panel-heading .coursename a,
+#region-main .course-search-result .panel-default > .panel-heading .coursename .dimmed {
+  color: white;
+}
+#region-main .course-content .content {
   margin: 5px;
 }
 #region-main .sectionname {
@@ -18617,6 +18691,9 @@ form#coursesearchnavbar {
   -ms-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+}
+#region-main .section li {
+  margin: 5px;
 }
 .loginpanel .guestsub form {
   text-align: center;
@@ -18694,51 +18771,51 @@ a.btn {
   white-space: normal;
   background-color: #FFFFFF;
 }
-.path-grade-report .nav.nav-tabs {
+.path-grade .nav.nav-tabs {
   width: 100%;
   padding: 10px 0 0 0;
 }
-.path-grade-report .nav.nav-tabs > li {
+.path-grade .nav.nav-tabs > li {
   float: none;
 }
-.path-grade-report .nav.nav-tabs > li > a {
+.path-grade .nav.nav-tabs > li > a {
   text-align: center;
   margin-bottom: 5px;
 }
-.path-grade-report .nav.nav-tabs > .dropdown .dropdown-menu {
+.path-grade .nav.nav-tabs > .dropdown .dropdown-menu {
   top: auto;
   left: auto;
 }
 @media (min-width: 768px) {
-  .path-grade-report .nav.nav-tabs > li {
+  .path-grade .nav.nav-tabs > li {
     display: table-cell;
     width: 1%;
   }
-  .path-grade-report .nav.nav-tabs > li > a {
+  .path-grade .nav.nav-tabs > li > a {
     margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
-  .path-grade-report .nav.nav-tabs > li {
+  .path-grade .nav.nav-tabs > li {
     display: block;
     width: 100%;
     float: none;
   }
-  .path-grade-report .nav.nav-tabs > li > a {
+  .path-grade .nav.nav-tabs > li > a {
     text-align: center;
     margin-bottom: 5px;
   }
 }
 @media (min-width: 992px) {
-  .path-grade-report .nav.nav-tabs {
+  .path-grade .nav.nav-tabs {
     border: 0;
     border-radius: 0;
   }
-  .path-grade-report .nav.nav-tabs > li {
+  .path-grade .nav.nav-tabs > li {
     display: table-cell;
     width: 1%;
   }
-  .path-grade-report .nav.nav-tabs > li > a {
+  .path-grade .nav.nav-tabs > li > a {
     margin-bottom: 0;
   }
 }
@@ -18746,9 +18823,25 @@ a.btn {
 th.userfield.useremail[scope="row"] {
   text-transform: lowercase;
 }
+.block .minicalendar h3 {
+  margin-top: 10px;
+}
 .block .minicalendar th,
 .block .minicalendar td {
   padding: 0;
+}
+.block .minicalendarblock {
+  margin-bottom: 10px;
+}
+.block.block_calendar_month .content {
+  padding: 5px;
+}
+.block.block_calendar_month td,
+.block.block_calendar_month th {
+  border: 0;
+}
+.path-calendar table {
+  background-color: white;
 }
 .userprofile .userprofilebox .profilepicture {
   position: relative;
@@ -18801,6 +18894,9 @@ form#authmenu table tr td:first-child {
 .path-mod-quiz .questioncontainer input[type="text"] {
   padding-bottom: 2px;
   padding-top: 2px;
+}
+.path-mod-quiz .que .info {
+  width: 8em;
 }
 #page-mod-quiz-edit .questionbankwindow.block div.header {
   background-color: #822433;
