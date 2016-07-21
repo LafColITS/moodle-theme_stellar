@@ -39,19 +39,19 @@ echo $OUTPUT->doctype() ?>
 
 <nav role="navigation" class="navbar navbar-inverse">
     <div class="container-fluid">
-    <div class="navbar-header pull-left">
-        <?php echo $OUTPUT->navbar_brand(); ?>
-    </div>
-    <div class="navbar-header pull-right">
-        <?php echo $OUTPUT->user_menu(); ?>
-        <?php echo $OUTPUT->navbar_button(); ?>
-    </div>
-    <div id="moodle-navbar" class="navbar-collapse collapse navbar-left">
-        <?php echo $OUTPUT->custom_menu(); ?>
-        <ul class="nav pull-right">
-            <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-        </ul>
-    </div>
+        <div class="navbar-header pull-left">
+            <?php echo $OUTPUT->navbar_brand(); ?>
+            <?php echo $OUTPUT->navbar_button(); ?>
+        </div>
+        <div id="moodle-navbar" class="navbar-collapse collapse">
+            <div class="navbar-header pull-left">
+                <?php echo $OUTPUT->custom_menu(); ?>
+            </div>
+            <div class="navbar-header pull-right">
+                <?php echo $OUTPUT->page_heading_menu(); ?>
+                <?php echo $OUTPUT->user_menu(); ?>
+            </div>
+        </div>
     </div>
 </nav>
 <header class="moodleheader">
