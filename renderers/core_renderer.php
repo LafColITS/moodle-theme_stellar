@@ -37,7 +37,7 @@ class theme_stellar_core_renderer extends theme_bootstrap_core_renderer {
             $html = '<h1>'.$SITE->shortname.'</h1>';
         }
         return html_writer::link($CFG->wwwroot, $html, array('class' => 'navbar-brand'));
-    } 
+    }
 
     protected function render_custom_menu(custom_menu $menu) {
         // Add the lang_menu to the left of the menu.
