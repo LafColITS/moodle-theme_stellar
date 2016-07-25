@@ -40,6 +40,6 @@ $THEME->layouts = array(
         'file' => 'default.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('nonavbar' => false),
+        'options' => array('nonavbar' => false, 'langmenu' => true),
     ),
 );
