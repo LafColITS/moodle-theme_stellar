@@ -18663,8 +18663,14 @@ form#coursesearchnavbar {
 #region-main .course_category_tree .panel-default > .panel-heading .coursename a {
   color: #006699;
 }
+#region-main .course-search-result .panel-default > .panel-heading,
+#region-main .frontpage-course-list-all .panel-default > .panel-heading {
+  border-radius: 0;
+}
 #region-main .course-search-result .panel-default > .panel-heading .coursename a,
-#region-main .course-search-result .panel-default > .panel-heading .coursename .dimmed {
+#region-main .frontpage-course-list-all .panel-default > .panel-heading .coursename a,
+#region-main .course-search-result .panel-default > .panel-heading .coursename .dimmed,
+#region-main .frontpage-course-list-all .panel-default > .panel-heading .coursename .dimmed {
   color: white;
 }
 #region-main .course-content .content {
