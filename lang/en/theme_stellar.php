@@ -40,4 +40,6 @@ $string['logo'] = 'Logo';
 $string['logodesc'] = 'Enter the URL to an image to use as the logo for this site.
 Should be http://www.yoursite.com/path/to/logo.png';
 $string['pluginname'] = 'Stellar';
+$string['region-side-post'] = 'Right';
+$string['region-side-pre'] = 'Left';
 $string['skiptoblocks'] = 'Skip to blocks';
