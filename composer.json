@@ -3,15 +3,15 @@
     "type": "moodle-theme",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:bmbrands/theme_bootstrap.git"
+            "type": "composer",
+            "url":  "https://moodlegist.clamp-it.org"
         }
     ],
     "require": {
         "composer/installers": "~1.0"
     },
     "require-dev": {
-        "bmbrands/theme_bootstrap": "dev-MOODLE_31_BETA"
+        "moodle-plugin-db/theme_bootstrap": "2016080100"
     },
     "extra": {
         "installer-name": "stellar"

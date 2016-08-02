@@ -18064,6 +18064,18 @@ fieldset[disabled] a#rubric-rubric.gradingform_rubric .addcriterion {
 .path-grade-report-grader .grade_icons {
   display: inline;
 }
+#page-mod-assign-grader .span4 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 992px) {
+  #page-mod-assign-grader .span4 {
+    float: left;
+    width: 33.33333333%;
+  }
+}
 .editor_atto_content .img-responsive {
   display: inline-block;
 }

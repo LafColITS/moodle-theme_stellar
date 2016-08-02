@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "52d3529c887352058ea58612f93ca6df",
-    "content-hash": "35ea9b118ef883385bc5d1c6e067d60d",
+    "hash": "c38e128d2ce74c101d78d218a9e0dde1",
+    "content-hash": "3f799587cd4e1d8ae5f1bb26a97341b3",
     "packages": [
         {
             "name": "composer/installers",
@@ -112,18 +112,13 @@
     ],
     "packages-dev": [
         {
-            "name": "bmbrands/theme_bootstrap",
-            "version": "dev-MOODLE_31_BETA",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bmbrands/theme_bootstrap.git",
-                "reference": "0f9f3e91d5005e35cf485f4fcf932637b0c422b3"
-            },
+            "name": "moodle-plugin-db/theme_bootstrap",
+            "version": "2016080100",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bmbrands/theme_bootstrap/zipball/0f9f3e91d5005e35cf485f4fcf932637b0c422b3",
-                "reference": "0f9f3e91d5005e35cf485f4fcf932637b0c422b3",
-                "shasum": ""
+                "url": "https://moodle.org/plugins/download.php/11892/theme_bootstrap_moodle31_2016080100.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -132,18 +127,12 @@
             "extra": {
                 "installer-name": "bootstrap"
             },
-            "support": {
-                "source": "https://github.com/bmbrands/theme_bootstrap/tree/MOODLE_31_BETA",
-                "issues": "https://github.com/bmbrands/theme_bootstrap/issues"
-            },
-            "time": "2016-07-21 17:25:05"
+            "homepage": "https://moodle.org/plugins/bootstrap"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bmbrands/theme_bootstrap": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
