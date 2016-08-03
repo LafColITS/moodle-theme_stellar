@@ -18692,10 +18692,15 @@ form#coursesearchnavbar {
   margin: 0 0 10px 0;
   white-space: normal;
 }
+#region-main .form-autocomplete-suggestions {
+  border-color: #5bc0de;
+  overflow: auto;
+  padding: 0;
+}
 #region-main ul,
 #region-main ol {
-  padding-left: 30px;
   overflow: visible;
+  padding-left: 30px;
 }
 #region-main .topics,
 #region-main .weeks,
