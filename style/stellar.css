@@ -18606,6 +18606,9 @@ ul[role=tree] {
 .block_filtered_course_list .course-section {
   padding-left: 0;
 }
+.block_filtered_course_list .course-section a {
+  padding-left: 21px;
+}
 .stellar-card {
   background-color: #FFFFFF;
   border-color: #eeeeee;
