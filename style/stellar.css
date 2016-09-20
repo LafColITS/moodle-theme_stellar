@@ -18858,6 +18858,9 @@ a.btn {
   overflow: visible;
   padding-left: 30px;
 }
+#page-mod-assign-grader .alignment a {
+  text-decoration: none;
+}
 .subfield.subfield_email,
 th.userfield.useremail[scope="row"] {
   text-transform: lowercase;
