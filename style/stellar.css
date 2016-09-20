@@ -18853,6 +18853,11 @@ a.btn {
     margin-bottom: 0;
   }
 }
+#page-mod-assign-grader ul,
+#page-mod-assign-grader ol {
+  overflow: visible;
+  padding-left: 30px;
+}
 .subfield.subfield_email,
 th.userfield.useremail[scope="row"] {
   text-transform: lowercase;
