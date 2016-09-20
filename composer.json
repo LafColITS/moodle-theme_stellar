@@ -5,13 +5,17 @@
         {
             "type": "composer",
             "url":  "https://moodlegist.clamp-it.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bmbrands/theme_bootstrap"
         }
     ],
     "require": {
         "composer/installers": "~1.0"
     },
     "require-dev": {
-        "moodle-plugin-db/theme_bootstrap": "2016080100"
+        "bmbrands/theme_bootstrap": "dev-MOODLE_31_STABLE"
     },
     "extra": {
         "installer-name": "stellar"

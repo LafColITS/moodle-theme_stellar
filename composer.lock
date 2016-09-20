@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c38e128d2ce74c101d78d218a9e0dde1",
-    "content-hash": "3f799587cd4e1d8ae5f1bb26a97341b3",
+    "hash": "ae181176a1d372936f3674e0e544c786",
+    "content-hash": "9be26aa0247664f14f79d1c0a1afaaf1",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
-                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
                 "shasum": ""
             },
             "require": {
@@ -65,6 +65,7 @@
                 "MODX Evo",
                 "Mautic",
                 "OXID",
+                "Plentymarkets",
                 "RadPHP",
                 "SMF",
                 "Thelia",
@@ -72,9 +73,11 @@
                 "agl",
                 "aimeos",
                 "annotatecms",
+                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -98,27 +101,34 @@
                 "piwik",
                 "ppi",
                 "puppet",
+                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2016-07-05 06:18:20"
+            "time": "2016-08-13 20:53:52"
         }
     ],
     "packages-dev": [
         {
-            "name": "moodle-plugin-db/theme_bootstrap",
-            "version": "2016080100",
+            "name": "bmbrands/theme_bootstrap",
+            "version": "dev-MOODLE_31_STABLE",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bmbrands/theme_bootstrap.git",
+                "reference": "ac27984986e88dd0d75df5cff75ab573de05cf2c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://moodle.org/plugins/download.php/11892/theme_bootstrap_moodle31_2016080100.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/bmbrands/theme_bootstrap/zipball/ac27984986e88dd0d75df5cff75ab573de05cf2c",
+                "reference": "ac27984986e88dd0d75df5cff75ab573de05cf2c",
+                "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -127,12 +137,18 @@
             "extra": {
                 "installer-name": "bootstrap"
             },
-            "homepage": "https://moodle.org/plugins/bootstrap"
+            "support": {
+                "source": "https://github.com/bmbrands/theme_bootstrap/tree/MOODLE_31_STABLE",
+                "issues": "https://github.com/bmbrands/theme_bootstrap/issues"
+            },
+            "time": "2016-09-09 07:45:42"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bmbrands/theme_bootstrap": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

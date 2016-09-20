@@ -9765,9 +9765,10 @@ textarea.path-admin .roleassigntable input[type="text"] {
 .course-content ul li.section.main .right {
   display: none;
 }
-.course-content ul li.section.hidden {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+.course-content ul li.section.hidden .sectionname > span,
+.course-content ul li.section.hidden .content > div,
+.course-content ul li.section.hidden .activity .activityinstance {
+  opacity: .5;
 }
 .course-content ul.topics li.section .content,
 .course-content ul.weeks li.section .content {
@@ -14689,6 +14690,12 @@ textarea.mform .fitem .felement textarea {
 }
 .mform .iconhelp {
   margin-left: 4px;
+}
+.mform .fcheckbox > span,
+.mform .fradio > span,
+.mform .fgroup > span {
+  display: inline-block;
+  margin-top: 5px;
 }
 .form-item .form-label {
   position: relative;
