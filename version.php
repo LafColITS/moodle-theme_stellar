@@ -22,11 +22,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016080900;
+$plugin->version   = 2016092000;
 $plugin->requires  = 2016052300;
 $plugin->component = 'theme_stellar';
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = 'v1.0.2';
+$plugin->release   = 'v1.1.0';
 
 $plugin->dependencies = array(
     'theme_bootstrap' => 2016080100
